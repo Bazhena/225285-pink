@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<body>
 
-  </body>
+    <header class="page-header">
+        <div class="page-header__inner">
+            <div class="page-header__menu">
+                <a class="page-header__logo-link" href="#">PINK</a>
+                <a class="menu-toggler" href="#"></a>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a class="main-nav__btn" href="#main"><span>Главная</span></a>
+                        </li>
+                        <li>
+                            <a class="main-nav__btn" href="#foto"><span>Фотографии</span></a>
+                        </li>
+                        <li>
+                            <a class="main-nav__btn" href="#contest"><span>Конкурс</span></a>
+                        </li>
+                        <li>
+                            <a class="main-nav__btn" href="#academy"><span>HTML ACADEMY</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="top-photo">
+                <img src="http://placehold.it/150x100">
+            </div>
+            <div class="page-header__promo">
+                <div class="page-header__download">
+                    <a class="btn" href="#"></a>
+                    <ul class="download__os-list">
+                        <li>
+                            <a class="logo-os  logo-os--apple" href="#">Скачать приложение для устройств Mac OS</a>
+                        </li>
+                        <li>
+                            <a class="logo-os  logo-os--android" href="#">Скачать приложение для устройств Android</a>
+                        </li>
+                        <li>
+                            <a class="logo-os  logo-os--windows" href="#">Скачать приложение для устройств Windows</a>
+                        </li>
+                    </ul>
+                    <p class="download__options">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="page-content">
+
+        <div class="features">
+            <div class="features__inner">
+                <h1 class="features__h1">
+          <span class="features__slogan">Устали от серости мегаполиса?</span>
+          <span class="features__slogan">Нам есть, что вам<br>предложить!</span>
+        </h1>
+                <div class="features__sections">
+                    <div class="features__container">
+                        <section class="features__item">
+                            <h2 class="features__h2">Поднимает настроение</h2>
+                            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                        </section>
+                        <section class="features__item">
+                            <h2 class="features__h2">Меняет мир вокруг</h2>
+                            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
+                        </section>
+                        <section class="features__item">
+                            <h2 class="features__h2">Заводит новых друзей</h2>
+                            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых!</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-photo">
+            <img src="http://placehold.it/150x100">
+        </div>
+    </div>
+
+
+
+    <div class="reviews">
+        <div class="reviews__inner">
+            <div class="reviews__slider-wrap">
+                <div class="reviews__slider">
+                    <ul>
+                        <li class="reviews__slide">
+                            <div class="reviews__author">
+                                <span class="reviews__h2">Николай Петров</span>
+                            </div>
+                            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                        </li>
+                    </ul>
+                </div>
+
+                <input type="radio" id="button-1" name="controls" checked="checked" />
+                <input type="radio" id="button-2" name="controls" />
+                <input type="radio" id="button-3" name="controls" />
+                <div class="reviews-paginator">
+                    <label for="button-1"></label>
+                    <label for="button-2"></label>
+                    <label for="button-3"></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="tariffs">
+        <div class="tariffs__inner">
+            <div class="photo-hit">
+                <img src="http://placehold.it/150x50">
+            </div>
+            <div class="tariffs__wrap">
+                <span class="package-option">Розовый фильтр</span>
+                <img class="icon icon-yes" src="http://placehold.it/25x25">
+            </div>
+            <div class="tariffs__wrap">
+                <span class="package-option">Смайлики</span>
+                <img class="icon icon-yes" src="http://placehold.it/25x25">
+            </div>
+            <div class="tariffs__wrap">
+                <span class="package-option">Комментарии</span>
+                <img class="icon icon-no" src="http://placehold.it/25x25">
+            </div>
+        </div>
+
+        <input type="radio" id="btn-11" name="toggled">
+        <input type="radio" id="btn-22" name="toggled" checked>
+        <input type="radio" id="btn-33" name="toggled">
+        <div class="tariffs-paginator">
+            <label for="btn-11"></label>
+            <label for="btn-22"></label>
+            <label for="btn-33"></label>
+        </div>
+    </div>
+
+
+
+    <footer class="page-footer">
+        <div class="page-footer__inner">
+            <p class="page-footer__h1">Остались вопросы?
+                <br>Свяжитесь с нами!</p>
+            <div class="page-footer__contacts-wrap">
+                <div class="page-footer__contacts">
+                    <p class="page-footer__h2">Звоните:</p>
+                    <a class="page-footer__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                </div>
+                <div class="page-footer__contacts">
+                    <p class="page-footer__h2">Пишите:</p>
+                    <a class="page-footer__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <p class="page-footer__h2">Приезжайте в гости:</p>
+                </div>
+                <div class="page-footer__contacts">
+                    <p class="page-footer__text">ул. Большая Конюшенная, 19/8</p>
+                    <div class="map"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
