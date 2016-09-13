@@ -12,20 +12,20 @@
         <div class="page-header__inner">
             <div class="page-header__menu">
                 <a class="page-header__logo-link" href="#">PINK</a>
-                <a class="menu-toggler" href="#"></a>
+                <a class="page-header__menu-toggler" href="#"></a>
                 <nav class="main-nav">
                     <ul>
                         <li>
-                            <a class="main-nav__btn" href="#main"><span>Главная</span></a>
+                            <a class="main-nav__btn" href="#main">Главная</a>
                         </li>
                         <li>
-                            <a class="main-nav__btn" href="#foto"><span>Фотографии</span></a>
+                            <a class="main-nav__btn" href="#foto">Фотографии</a>
                         </li>
                         <li>
-                            <a class="main-nav__btn" href="#contest"><span>Конкурс</span></a>
+                            <a class="main-nav__btn" href="#contest">Конкурс</a>
                         </li>
                         <li>
-                            <a class="main-nav__btn" href="#academy"><span>HTML ACADEMY</span></a>
+                            <a class="main-nav__btn" href="#academy">HTML ACADEMY</a>
                         </li>
                     </ul>
                 </nav>
@@ -41,16 +41,16 @@
         <div class="form__container">
             <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
             <div class="form__group">
-                <label class="form__title form__title--name" for="surname">ФАМИЛИЯ:</label>
+                <label class="form__title form__title--text" for="surname">Фамилия:</label>
                 <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
             </div>
             <div class="form__group">
-                <label class="form__title form__title--name" for="name">ИМЯ:</label>
+                <label class="form__title form__title--text" for="name">Имя:</label>
                 <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
             </div>
 
             <div class="form__group">
-                <label class="form__title form__title--name" for="patronymic">ОТЧЕСТВО</label>
+                <label class="form__title form__title--text" for="patronymic">Отчество:</label>
                 <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </div>
         </div>
@@ -58,56 +58,50 @@
 
         <div class="form__container">
             <fieldset class="form__fieldset">
-                <legend class="form__title form__title--legend">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+                <legend class="form__title form__title--text">Ваши безбашенные достижения в&nbsp;путешествии</legend>
                 <ul class="achievement">
-                    <div class="form__group form__group--achievement">
-                        <li>
-                            <input class="form__input form__input--checkbox" type="checkbox" name="shark" id="shark" checked>
-                            <label class="achievement__item" for="shark">Сделал селфи с&nbsp;акулой</label>
-                        </li>
-                        <li>
-                            <input class="form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
-                            <label class="achievement__item" for="sunburn">Обгорел на&nbsp;пляже</label>
-                        </li>
-                    </div>
-                    <div class="form__group form__group--achievement">
-                        <li>
-                            <input class="form__input form__input--checkbox" type="checkbox" name="chuck" id="chuck">
-                            <label class="achievement__item" for="chuck">Видел Чака Норриса</label>
-                        </li>
-                        <li>
-                            <input class="form__input form__input--checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-                            <label class="achievement__item" for="souvenirs">Накупил сувениров</label>
-                        </li>
-                    </div>
-                    <div class="form__group form__group--achievement">
-                        <li>
-                            <input class="form__input form__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-                            <label class="achievement__item" for="tower">Удержал башню</label>
-                        </li>
-                        <li>
-                            <input class="form__input form__input--checkbox" type="checkbox" name="hotel" id="hotel">
-                            <label class="achievement__item" for="hotel">Разгромил отель</label>
-                        </li>
-                    </div>
+                    <li>
+                        <input class="form__input form__input--checkbox" type="checkbox" name="shark" id="shark" checked>
+                        <label class="achievement__item" for="shark">Сделал селфи с&nbsp;акулой</label>
+                    </li>
+                    <li>
+                        <input class="form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
+                        <label class="achievement__item" for="sunburn">Обгорел на&nbsp;пляже</label>
+                    </li>
+                    <li>
+                        <input class="form__input form__input--checkbox" type="checkbox" name="chuck" id="chuck">
+                        <label class="achievement__item" for="chuck">Видел Чака Норриса</label>
+                    </li>
+                    <li>
+                        <input class="form__input form__input--checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                        <label class="achievement__item" for="souvenirs">Накупил сувениров</label>
+                    </li>
+                    <li>
+                        <input class="form__input form__input--checkbox" type="checkbox" name="tower" id="tower" checked>
+                        <label class="achievement__item" for="tower">Удержал башню</label>
+                    </li>
+                    <li>
+                        <input class="form__input form__input--checkbox" type="checkbox" name="hotel" id="hotel">
+                        <label class="achievement__item" for="hotel">Разгромил отель</label>
+                    </li>
                 </ul>
             </fieldset>
         </div>
 
         <div class="form__container">
             <div class="form__group">
-                <label class="form__title form__title--name" for="tel">НОМЕРОК ТЕЛЕФОНЧИКА:</label>
+                <label class="form__title form__title--text" for="tel">Номерок телефончика:</label>
                 <input class="form__input" type="text" name="tel" id="surname" placeholder="Номер, пожалуйста" required>
             </div>
             <div class="form__group">
-                <label class="form__title form__title--name" for="name">АДРЕСОК ПОЧТЫ:</label>
+                <label class="form__title form__title--text" for="name">Адрес почты:</label>
                 <input class="form__input" type="text" name="name" id="name" placeholder="Введите почту" required>
             </div>
         </div>
 
         <div class="form__container">
             <fieldset class="form__fieldset">
-                <legend class="form__title form__title--legend">С каким приложением путешествовали?</legend>
+                <legend class="form__title form__title--text">С каким приложением путешествовали?</legend>
                 <ul class="user-platform">
                     <li class="user-platform__item">
                         <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="iOS">
@@ -125,20 +119,18 @@
             </fieldset>
         </div>
 
-        <section class="review">
-            <p>ОПИШИТЕ СВОИ ЭМОЦИИ</p>
-            <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </section>
-
-        <div class="form__container">
-            <div class="form-correction"><span class="form-correction__symbol">&#8432;</span> &mdash; обязательные <span class="form-correction__full-text">для заполнения </span>поля</div>
+        <div class="form__review">
+            <p class="form__title form__title--text">Опишите свои эмоции</p>
+            <textarea class="review-text" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <button class="form__review__submit-btn" type="submit">Отправить форму</button>
         </div>
+
+        <div class="form-correction"><span class="form-correction__symbol">&#8432;</span> &mdash; обязательные <span class="form-correction__full-text">для заполнения </span>поля</div>
     </form>
 
     <footer class="page-footer">
         <div class="page-footer__container">
-            <a class="page-footer__logo" href="index.html"></a>
-            <img src="http://placehold.it/100x50">
+            <a class="page-footer__logo" href="index.html"><img src="http://placehold.it/100x50"></a>
             <section class="social-links">
                 <a class="social-link social-link--twitter" href="#">Twitter</a>
                 <a class="social-link social-link--facebook" href="#">Facebook</a>
@@ -146,9 +138,8 @@
             </section>
             <section class="copyright">
                 <p class="copyright__text">Разработано
-                    <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/">
+                    <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/"><img src="http://placehold.it/50x50">
                     </a>
-                    <img src="http://placehold.it/50x50">
                 </p>
             </section>
         </div>

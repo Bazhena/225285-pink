@@ -13,20 +13,20 @@
         <div class="page-header__inner">
             <div class="page-header__menu">
                 <a class="page-header__logo-link" href="#">PINK</a>
-                <a class="menu-toggler" href="#"></a>
+                <a class="page-header__menu-toggler" href="#"></a>
                 <nav class="main-nav">
                     <ul>
                         <li>
-                            <a class="main-nav__btn" href="#main"><span>Главная</span></a>
+                            <a class="main-nav__btn" href="#main">Главная</a>
                         </li>
                         <li>
-                            <a class="main-nav__btn" href="#foto"><span>Фотографии</span></a>
+                            <a class="main-nav__btn" href="#foto">Фотографии</a>
                         </li>
                         <li>
-                            <a class="main-nav__btn" href="#contest"><span>Конкурс</span></a>
+                            <a class="main-nav__btn" href="#contest">Конкурс</a>
                         </li>
                         <li>
-                            <a class="main-nav__btn" href="#academy"><span>HTML ACADEMY</span></a>
+                            <a class="main-nav__btn" href="#academy">HTML ACADEMY</a>
                         </li>
                     </ul>
                 </nav>
@@ -36,7 +36,7 @@
             </div>
             <div class="page-header__promo">
                 <div class="page-header__download">
-                    <a class="btn" href="#"></a>
+                    <a class="btn" href="#">Скачать приложение</a>
                     <ul class="download__os-list">
                         <li>
                             <a class="logo-os  logo-os--apple" href="#">Скачать приложение для устройств Mac OS</a>
@@ -56,7 +56,7 @@
 
 
 
-    <div class="page-content">
+    <main class="page-content">
 
         <div class="features">
             <div class="features__inner">
@@ -85,34 +85,33 @@
         <div class="middle-photo">
             <img src="http://placehold.it/150x100">
         </div>
-    </div>
+    </main>
 
 
 
     <div class="reviews">
         <div class="reviews__inner">
-            <div class="reviews__slider-wrap">
-                <div class="reviews__slider">
-                    <ul>
-                        <li class="reviews__slide">
-                            <div class="reviews__author">
-                                <span class="reviews__h2">Николай Петров</span>
-                            </div>
-                            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-                        </li>
-                    </ul>
-                </div>
 
-                <input type="radio" id="button-1" name="controls" checked="checked" />
-                <input type="radio" id="button-2" name="controls" />
-                <input type="radio" id="button-3" name="controls" />
-                <div class="reviews-paginator">
-                    <label for="button-1"></label>
-                    <label for="button-2"></label>
-                    <label for="button-3"></label>
-                </div>
-
+            <div class="reviews__slider">
+                <ul>
+                    <li class="reviews__slide">
+                        <div class="reviews__author">
+                            <span class="reviews__h2">Николай Петров</span>
+                        </div>
+                        <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                    </li>
+                </ul>
             </div>
+
+            <input type="radio" id="button-1" name="controls" checked="checked" />
+            <input type="radio" id="button-2" name="controls" />
+            <input type="radio" id="button-3" name="controls" />
+            <div class="paginator">
+                <label class="paginator__btn1" for="button-1"></label>
+                <label class="paginator__btn2" for="button-2"></label>
+                <label class="paginator__btn3" for="button-3"></label>
+            </div>
+
         </div>
     </div>
 
@@ -120,31 +119,50 @@
 
 
     <div class="tariffs">
-        <div class="tariffs__inner">
-            <div class="photo-hit">
-                <img src="http://placehold.it/150x50">
-            </div>
-            <div class="tariffs__wrap">
-                <span class="package-option">Розовый фильтр</span>
-                <img class="icon icon-yes" src="http://placehold.it/25x25">
-            </div>
-            <div class="tariffs__wrap">
-                <span class="package-option">Смайлики</span>
-                <img class="icon icon-yes" src="http://placehold.it/25x25">
-            </div>
-            <div class="tariffs__wrap">
-                <span class="package-option">Комментарии</span>
-                <img class="icon icon-no" src="http://placehold.it/25x25">
-            </div>
-        </div>
+        <table class="tariffs__table">
+            <tr class="tariffs__row-1">
+                <td class="tariffs__col-1">
+                    <div class="tariffs__buy">
+                        <p class="tariffs__ribbon">ХИТ
+                        </p>
+                        <span class="tariffs__name">Стандарт</span>
+                        <span class="tariffs__price">3,99 USD</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="tariffs__row-2">
+                <td class="tariffs__col-1">
+                    <div class="tariffs__wrap">
+                        <span class="package-option">Розовый фильтр</span>
+                        <img src="http://placehold.it/25x25">
+                    </div>
+                </td>
+            </tr>
+            <tr class="tariffs__row-3">
+                <td class="tariffs__col-1">
+                    <div class="tariffs__wrap">
+                        <span class="package-option">Смайлики</span>
+                        <img src="http://placehold.it/25x25">
+                    </div>
+                </td>
+            </tr>
+            <tr class="tariffs__row-4">
+                <td class="tariffs__col-1">
+                    <div class="tariffs__wrap">
+                        <span class="package-option">Комментарии</span>
+                        <img src="http://placehold.it/25x25">
+                    </div>
+                </td>
+            </tr>
+        </table>
 
-        <input type="radio" id="btn-11" name="toggled">
-        <input type="radio" id="btn-22" name="toggled" checked>
-        <input type="radio" id="btn-33" name="toggled">
-        <div class="tariffs-paginator">
-            <label for="btn-11"></label>
-            <label for="btn-22"></label>
-            <label for="btn-33"></label>
+        <input type="radio" id="btn-1" name="toggled">
+        <input type="radio" id="btn-2" name="toggled" checked>
+        <input type="radio" id="btn-3" name="toggled">
+        <div class="paginator">
+            <label class="paginator__btn1" for="btn-1"></label>
+            <label class="paginator__btn2" for="btn-2"></label>
+            <label class="paginator__btn3" for="btn-3"></label>
         </div>
     </div>
 
@@ -152,7 +170,7 @@
 
     <footer class="page-footer">
         <div class="page-footer__inner">
-            <p class="page-footer__h1">Остались вопросы?
+            <p class="page-footer__h2">Остались вопросы?
                 <br>Свяжитесь с нами!</p>
             <div class="page-footer__contacts-wrap">
                 <div class="page-footer__contacts">
@@ -162,9 +180,9 @@
                 <div class="page-footer__contacts">
                     <p class="page-footer__h2">Пишите:</p>
                     <a class="page-footer__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                    <p class="page-footer__h2">Приезжайте в гости:</p>
                 </div>
                 <div class="page-footer__contacts">
+                    <p class="page-footer__h2">Приезжайте в гости:</p>
                     <p class="page-footer__text">ул. Большая Конюшенная, 19/8</p>
                     <div class="map"></div>
                 </div>
