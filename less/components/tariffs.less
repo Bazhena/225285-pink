@@ -1,0 +1,59 @@
+@import 'variables';
+.tariffs {
+  background: @grey-light;
+  margin: 0;
+  padding: 0;
+  outline: 3px solid @pink;
+  &__inner {
+    margin: 0 auto;
+  }
+  &__table {
+    min-width: 265%;
+    margin: 0;
+    border-collapse: collapse;
+    margin: 20px 0 70px 0;
+  }
+  &__table {
+    & td {
+      border: 2px solid @grey;
+      background: #fff;
+    }
+  }
+  &__col-1 {
+    width: 280px;
+  }
+  &__row-1 td {
+    background: @blue;
+    padding: 20px;
+  }
+  &__ribbon {
+    margin: 0;
+    width: 61px;
+    height: 61px;
+    & span {
+      width: 120px;
+      padding: 5px;
+      background-color: @pink;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  &__name {
+    text-align: center;
+    font-family: @font-family-bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__price {
+    display: block;
+    font-size: @font-size-h1;
+    color: #fff;
+  }
+  &__package-option {
+    font-family: @font-family-light;
+    text-transform: uppercase;
+  }
+}
