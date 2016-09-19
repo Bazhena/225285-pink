@@ -1,37 +1,97 @@
 @import 'variables';
+@import 'mixins';
 .reviews {
-  background: linear-gradient(-5deg, #f2f2f2 15%, #ffffff 15%);
-  background-size: 100% 100%;
   outline: 3px solid @pink;
-  &__inner {
-    padding: 60px 0 140px;
-    margin: 0 auto;
-  }
-  &__slider {
-    & ul {
-      list-style: none;
-      width: 100%;
-      margin: auto;
+  position: relative;
+  overflow: hidden;
+  &__container {
+    .container();
+    padding-top: 28px;
+    @media (min-width: @screen_tablet) {
+      padding-top: 50px;
+    }
+    @media (min-width: @screen_desktop) {
+      width: 700px;
+      padding-bottom: 8px;
     }
   }
-  &__slide {
-    padding: 0 10px;
-    text-align: center;
+  @media (min-width: @screen_desktop) {
+    padding-top: 130px;
+    background: @bg-white;
   }
-  &__author {
-    width: 100%;
-  }
-  &__h2 {
-    margin: 0 auto 25px auto;
-    font-family: @font-family-bold;
-    color: @blue;
-    font-size: @font-size-h2;
-    font-weight: bold;
-  }
+}
+
+.reviews-item {
+  outline: 3px solid @pink;
+  margin-bottom: 27px;
   &__text {
-    padding: 60px 0 0;
-    margin: 0 5%;
+    line-height: @line-height-base;
     font-family: @font-family-regular;
-    line-height: @line-height;
+    font-weight: @font-weight-base;
+    @media (min-width: @screen_tablet) {
+      line-height: @line-height-base;
+    }
   }
+  &__info {
+    display: none;
+    font-size: @font-size;
+    @media (min-width: @screen_tablet) {
+      display: block;
+      margin-top: 5px;
+    }
+    @media (min-width: @screen_desktop) {
+      font-size: (@font-size-big);
+    }
+  }
+}
+
+.reviews-item__title {
+  font-size: @font-size-h2;
+  font-weight: (@font-weight-base + 300);
+  @media (min-width: @screen_tablet) {
+    font-size: (@font-size-h2 + 0.125);
+  }
+  @media (min-width: @screen_desktop) {
+    font-size: (@font-size-h2 + 0.375);
+  }
+  &--upper {
+    @media (min-width: @screen_tablet) {
+      display: none;
+    }
+  }
+  &--lower {
+    display: none;
+    @media (min-width: @screen_tablet) {
+      display: block;
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.reviews-slider {
+  position: relative;
+  display: none;
+  @media (min-width: @screen_desktop) {
+    display: block;
+  }
+  &__control {
+    position: absolute;
+  }
+  &__control--left {
+    top: -197px;
+    left: 129px;
+  }
+  &__control--right {
+    top: -197px;
+    right: 129px;
+  }
+}
+
+.reviews-slider__control:hover .control-color {
+  fill: #7e868f;
+}
+
+.reviews-slider__control:active .control-color {
+  opacity: 0.3;
 }
