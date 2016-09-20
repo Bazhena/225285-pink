@@ -1,0 +1,104 @@
+     @import 'variables';
+     @import 'mixins';
+     .page-title {
+       color: @text-white;
+       background-color: @bg-dark;
+       background: url(/img/bg-back-mobile@1x.jpg) no-repeat;
+       background-position: center top;
+       background-size: cover;
+       outline: 3px solid @pink;
+       @media (min-width: @screen_tablet) {
+         background-image: url(/img/bg-back-mobile@1x.jpg);
+       }
+       &--inner {}
+       &__container {
+         .container();
+         padding-top: 77px;
+         padding-bottom: 37px;
+         @media (min-width: @screen_tablet) {
+           padding-top: 180px;
+           padding-bottom: 80px;
+         }
+       }
+       &__inner-container {
+         @media (min-width: @screen_desktop) {
+           padding-top: 172px;
+           padding-bottom: 101px;
+         }
+       }
+     }
+     
+     .page-title--main {
+       margin-left: 0;
+       background-color: @bg-dark, @bg-dark;
+       background-image: url(/img/iphone-hand-mobile@1x.png), url(/img/bg-back-mobile@1x.jpg);
+       background-position: 5% bottom, center top;
+       background-repeat: no-repeat, no-repeat;
+       background-size: 258px auto, cover;
+       @media (min-width: 350px) {
+         background-position: 20% bottom, center top;
+       }
+       @media (min-width: 500px) {
+         background-position: 30% bottom, center top;
+       }
+       @media (min-width: 550px) {
+         background-position: 40% bottom, center top;
+       }
+       @media (min-width: @screen_tablet) {
+         background: none;
+       }
+     }
+     
+     .page-title__main-container {
+       padding-top: 66px;
+       padding-bottom: 298px;
+       @media (min-width: @screen_tablet) {
+         padding: 0;
+       }
+     }
+     
+     .page-title__heading {
+       max-width: 960px;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 0;
+       z-index: 100;
+       font-family: @font-family-regular;
+       font-weight: @font-weight-light;
+       outline: 3px solid @pink;
+       &--main {
+         max-width: 300px;
+         margin-right: auto;
+         margin-left: auto;
+         @media (min-width: @screen_tablet) {
+           margin-top: 5px;
+           margin-left: 0;
+           font-size: 2.5rem;
+         }
+         @media (min-width: @screen_desktop) {
+           margin-top: 20px;
+           font-size: 3.125rem;
+         }
+       }
+       &--inner {
+         @media (min-width: @screen_tablet) {
+           font-size: 3.125rem;
+         }
+       }
+       &--photo {
+         margin-bottom: 5px;
+         @media (min-width: @screen_tablet) {
+           margin-top: 0;
+           margin-bottom: -5px;
+         }
+         @media (min-width: @screen_desktop) {
+           margin-bottom: 0;
+         }
+       }
+       &--form {
+         @media (min-width: @screen_tablet) {
+           max-width: 80%;
+           margin: auto;
+         }
+       }
+     }

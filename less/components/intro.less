@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+.intro {
+  outline: 3px solid @pink;
+  @media (min-width: @screen_tablet) {
+    background-color: @bg-dark;
+    background-image: url(/img/iphone-hand-mobile@1x.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: @screen_desktop) {
+    background-color: @bg-dark;
+    background-image: url(/img/iphone-hand-mobile@1x.png);
+    background-position: 97% bottom;
+    background-repeat: no-repeat;
+  }
+  &__container {
+    @media (min-width: @screen_tablet) {
+      .container();
+      padding: 182px 0 94px;
+    }
+    @media (min-width: @screen_tablet) {
+      padding: 199px 0 94px;
+    }
+  }
+  &--inner {
+    @media (min-width: @screen_desktop) {
+      background-image: url(/img/iphone-hand-mobile@1x.png);
+    }
+  }
+  &__container {
+    .container();
+    padding-top: 77px;
+    padding-bottom: 37px;
+    @media (min-width: @screen_tablet) {
+      padding-top: 180px;
+      padding-bottom: 80px;
+    }
+  }
+  &__inner-container {
+    @media (min-width: @screen_desktop) {
+      padding-top: 172px;
+      padding-bottom: 101px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+  @import 'variables';
+  .content-photo {
+    font-size: @font-size;
+    line-height: 2.1em;
+    color: @grey-dark;
+    @media (min-width: @screen_tablet) {
+      margin-bottom: 35px;
+    }
+    @media (min-width: @screen_desktop) {
+      margin-bottom: 0;
+    }
+    outline: 3px solid @pink;
+    &__description {
+      outline: 3px solid @pink;
+      margin: 45px 0 0;
+      font-size: @html-size-base;
+      background-color: @bg-grey;
+      @media (min-width: @screen_tablet) {
+        width: 85%;
+        margin: 95px auto 12px;
+        font-size: @font-size-big;
+        line-height: @line-height-base;
+      }
+      @media (min-width: @screen_tablet) {
+        margin-bottom: 42px;
+      }
+    }
+    &__panorama-day {
+      height: 35px;
+      width: 138px;
+      color: @text-white;
+      position: absolute;
+      top: 314px;
+      left: 158px;
+      z-index: 10;
+      background-color: @pink;
+      text-transform: uppercase;
+      @media (min-width: @screen_tablet) {
+        position: absolute;
+        top: 595px;
+        left: 500px;
+        z-index: 10;
+      }
+      @media (min-width: @screen_desktop) {
+        position: absolute;
+        top: 585px;
+        left: 710px;
+        z-index: 10;
+      }
+    }
+    &__name-user {
+      float: left;
+      margin-left: 10px;
+      font-size: @font-size;
+      font-weight: (@font-weight-base + 300);
+      padding: 0;
+    }
+    &__main-text {
+      margin: 35px 5px 5px;
+      padding: 0;
+      text-align: justify;
+      font-family: @font-family-regular;
+      font-weight: @font-weight-base;
+      line-height: @line-height-base;
+    }
+    &__number-likes {
+      margin-right: 125px;
+      margin-bottom: 20px;
+      padding: 5px;
+      color: @pink;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    &__post1 {
+      margin: 0;
+      padding: 0;
+    }
+    &__post {
+      margin: 0 10px 20px;
+      padding: 10px;
+      background-color: @bg-grey;
+      outline: 3px solid @pink;
+    }
+    &__date {
+      float: left;
+      margin: 4px 5px 0;
+      color: @grey-light;
+      font-size: @font-size-small;
+      text-transform: uppercase;
+    }
+  }
