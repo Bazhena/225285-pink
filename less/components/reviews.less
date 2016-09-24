@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixins';
+@import 'slider-pagination';
 .reviews {
-  outline: 3px solid @pink;
   position: relative;
   overflow: hidden;
   &__container {
@@ -22,12 +22,13 @@
 }
 
 .reviews-item {
-  outline: 3px solid @pink;
   margin-bottom: 27px;
+  &--2,
+  &--3 {
+    display: none;
+  }
   &__text {
-    line-height: @line-height-base;
-    font-family: @font-family-regular;
-    font-weight: @font-weight-base;
+    line-height: 2.1;
     @media (min-width: @screen_tablet) {
       line-height: @line-height-base;
     }

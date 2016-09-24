@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'mixins';
 .proof {
-  outline: 3px solid @pink;
   display: none;
   font-size: @font-size;
   line-height: @line-height-base;
@@ -16,6 +15,9 @@
   }
   &__container {
     .container();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 55px 0 20px;
     @media (min-width: @screen_desktop) {
@@ -78,6 +80,7 @@
     left: 24px;
     width: 192px;
     height: 192px;
+    font-family: @font-family-regular;
     font-size: 104.6px;
     font-weight: 700;
     line-height: 192px;
