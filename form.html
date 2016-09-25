@@ -109,13 +109,13 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
+            <a class="main-nav__link main-nav__link--active" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
@@ -133,33 +133,33 @@
 
 
   <form class="form" action="/echo" enctype="multipart/form-data" method="post">
-    <div class="form__container">
-      <p class="form__description">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! <span class="form__description--full">Пожалуйста, заполните форму ниже:</span></p>
-      <section class="form-section form-section--white form-section--name">
-        <div class="form__group">
-          <label class="form__title form__title--name" for="name">Имя: &#8432;</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
-        </div>
-        <div class="form__group">
-          <label class="form__title form__title--name" for="surname">Фамилия: &#8432;</label>
+    <p class="form__description">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="form__description--full">Пожалуйста, заполните форму ниже:</span></p>
+    <div class="form__container--1">
+      <section class="form-section form-section--name">
+        <div class="form__group form__group--name">
+          <label class="form__title form__title--name" for="surname">Фамилия:</label>
           <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
         </div>
-        <div class="form__group">
-          <label class="form__title form__title--name" for="patronymic">Отчество</label>
+        <div class="form__group form__group--name">
+          <label class="form__title form__title--name" for="name">Имя:</label>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="form__group form__group--name">
+          <label class="form__title form__title--name" for="patronymic">Отчество:</label>
           <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
         </div>
       </section>
     </div>
 
-    <section class="form-section form-section--white">
-      <div class="form__container">
+    <div class="form__container--2">
+      <section class="form-section form-section--achiev">
         <fieldset class="form__fieldset form__fieldset">
           <legend class="form__title form__title--achievement form__title--legend">Ваши безбашенные достижения в&nbsp;путешествии</legend>
           <ul class="achievement">
             <div class="form__group form__group--achievement">
               <li>
                 <input class="form__input form__input--checkbox" type="checkbox" name="shark" id="shark" checked>
-                <label class="achievement__item" for="shark">Сделал селфи с&nbsp;акулой</label>
+                <label class="achievement__item" for="shark">Сделал селфи&nbsp; с&nbsp;акулой</label>
               </li>
               <li>
                 <input class="form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
@@ -188,54 +188,65 @@
             </div>
           </ul>
         </fieldset>
-      </div>
-    </section>
-
-    <div class="form__container">
-      <section class="form-section form-section--white form-section--name">
-        <div class="form__group">
-          <label class="form__title form__title--name" for="tel">Номер, пожалуйста:</label>
-          <input class="form__input" type="text" name="tel" id="surname" placeholder="Номер, пожалуйста" required>
-        </div>
-        <div class="form__group">
-          <label class="form__title form__title--name" for="name">Адрес почты:</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Введите почту" required>
-        </div>
       </section>
     </div>
 
-    <section class="form-section form-section--grey">
-      <div class="form__container">
+    <div class="form__container--3">
+      <section class="form-section form-section--contacts">
         <fieldset class="form__fieldset">
-          <legend class="form__title form__title--legend">С&nbsp;каким приложением путешествовали? &#8432;</legend>
+          <legend class="form__title form__title--contacts form__title--legend">Контактная информация</legend>
+          <div class="form__wrap">
+            <div class="form__group form__group--contacts">
+              <label class="form__title form__title--info" for="tel">Номер телефона</label>
+              <input class="form__input form__input--contacts" type="text" name="tel" id="surname" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__group form__group--contacts">
+              <label class="form__title form__title--info" for="name">Адрес почты</label>
+              <input class="form__input form__input--contacts" type="text" name="name" id="name" placeholder="Введите почту">
+            </div>
+          </div>
+        </fieldset>
+      </section>
+    </div>
+
+    <div class="form__container--4">
+      <section class="form-section form-section--app">
+        <fieldset class="form__fieldset">
+          <legend class="form__title form__title--legend">С каким приложением путешествовали?</legend>
           <ul class="user-platform">
-            <li class="user-platform__item">
-              <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked>
-              <label class="user-platform__title" for="iOS">Pink для iOS</label>
-            </li>
-            <li class="user-platform__item">
-              <input class="form__input form__input--radio" type="radio" name="platform" value="Pink на Android" id="Android">
-              <label class="user-platform__title" for="Android">Pink на&nbsp;Android</label>
-            </li>
-            <li class="user-platform__item">
-              <input class="form__input form__input--radio" type="radio" name="platform" value="Windows Phone" id="Windows">
-              <label class="user-platform__title" for="Windows">Windows Phone</label>
-            </li>
+            <div class="form__group form__group--app">
+              <li class="user-platform__item">
+                <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked>
+                <label class="user-platform__title" for="iOS">Pink для iOS</label>
+              </li>
+            </div>
+            <div class="form__group form__group--app">
+              <li class="user-platform__item">
+                <input class="form__input form__input--radio" type="radio" name="platform" value="Pink на Android" id="Android">
+                <label class="user-platform__title" for="Android">Pink на&nbsp;Android</label>
+              </li>
+            </div>
+            <div class="form__group form__group--app">
+              <li class="user-platform__item">
+                <input class="form__input form__input--radio" type="radio" name="platform" value="Windows Phone" id="Windows">
+                <label class="user-platform__title" for="Windows">Windows Phone</label>
+              </li>
+            </div>
           </ul>
         </fieldset>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="form-section form-section__grey">
-      <div class="form__container">
+    <div class="form__container--5">
+      <section class="form-section form-section--rews">
         <fieldset class="form__fieldset">
           <legend class="form__title form__title--legend">Опишите свои эмоции</legend>
-          <textarea class="form__container__text" name="comment" id="comment-field" rows="5" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
-          <button class="btn btn--green" type="submit">Отправить форму</button>
-          <div class="form-correction"><span class="form-correction__symbol">&#8432;</span> &mdash; обязательные <span class="form-correction__full-text">для заполнения </span>поля</div>
+          <textarea class="form__container__text" name="comment" id="comment-field" rows="5" cols="60">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
-      </div>
-    </section>
+        <button class="btn btn--green" type="submit">Отправить форму</button>
+        <div class="form-correction"><span class="form-correction__symbol">&#8432;</span> &mdash; обязательные <span class="form-correction__full-text">для заполнения </span>поля</div>
+      </section>
+    </div>
   </form>
 
 

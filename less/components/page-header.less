@@ -1,12 +1,12 @@
   @import 'variables';
   @import 'mixins';
   .page-header {
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 100%;
     color: @text-white;
     z-index: 1000;
     user-select: none;
+    background-color: @blue;
     &__container {
       .container();
       .clearfix();
@@ -21,17 +21,16 @@
       float: left;
     }
     &--mini {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: @blue;
       @media (min-width: @screen_desktop) {
         display: none;
       }
     }
     &--full {
       display: none;
-      background-color: @grey-dark;
+      background-color: @blue;
       @media (min-width: @screen_desktop) {
         display: block;
-        background-color: rgba(0, 0, 0, 0.3);
       }
     }
   }
@@ -104,10 +103,10 @@
   .toggler--close {
     width: 25px;
     height: 25px;
-    font-size: 80px;
+    font-size: 50px;
     line-height: 25px;
     font-family: @font-family-regular;
-    font-weight: 200;
+    font-weight: 300;
     color: @text-white;
     z-index: 70;
   }
@@ -129,20 +128,20 @@
   }
   
   .main-nav {
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     width: 100%;
     border-top: 1px solid #000000;
-    background-color: @grey-dark;
-    &__item {
+    background-color: @blue;
+    .main-nav__item {
       border-bottom: 1px solid #000000;
       @media (min-width: @screen_desktop) {
         margin-left: 10.1%;
         border-bottom: none;
       }
     }
-    &__link {
+    .main-nav__link {
       display: block;
       padding: 20px 0;
       font-weight: 700;
@@ -151,15 +150,18 @@
       text-transform: uppercase;
       @media (min-width: @screen_desktop) {
         padding: 10px 0;
-        font-family: @font-family-regular;
         font-size: @font-size-big;
         font-weight: @font-weight-base;
         text-transform: none;
         border: none;
       }
     }
-    &__list {
+    .main-nav__list {
       @media (min-width: @screen_desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         align-items: center;
       }
     }
@@ -173,7 +175,7 @@
     }
   }
   
-  .navigation__link:hover {
+  .main-nav__link:hover {
     color: @pink;
     @media (min-width: @screen_desktop) {
       padding-bottom: 8px;
@@ -182,7 +184,7 @@
     }
   }
   
-  .navigation__link:active {
+  .main-nav__link:active {
     color: rgba(210, 40, 86, 0.3);
     @media (min-width: @screen_desktop) {
       color: @text-white;

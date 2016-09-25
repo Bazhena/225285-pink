@@ -109,10 +109,11 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
+            <a class="main-nav__link  main-nav__link--active" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -127,79 +128,82 @@
 
   <section class="page-title page-title--inner">
     <div class="page-title__container page-title__inner-container">
-      <h1 class="page-title__heading page-title__heading--inner page-title__heading--foto">Фотографии&nbsp;пользователей&nbsp;Пинк</h1>
+
+      <h1 class="page-title__heading page-title__heading--inner page-title__heading--foto">Фотографии пользователей</h1>
     </div>
   </section>
 
   <div class="content-photo">
-    <p class="content-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    <picture class="content-photo__post1">
+
+    <p class="content-photo__description">Взгляните на фотографии, которые выкладывают пользователи!
+      <br>Видите, как не хватает ваших?</p>
+    <div class="content-photo__post content-photo__post--1">
+      <picture class="content-photo__pictop">
         <source media="(min-width: 960px)" srcset="img/panorama-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/panorama-mobile@1x.jpg">
         <img src="img/panorama-mobile@1x.jpg" alt="заглушка">
       </picture>
-    <div class="content-photo__post">
+
       <span class="content-photo__panorama-day">Панорама дня</span>
       <span class="content-photo__name-user">Анна</span>
       <time class="content-photo__date">(5 минут назад)</time>
-      <p class="content-photo__main-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-      <img src="img/icon-heart.svg">
-      <span class="content-photo__number-likes">нравится: 215</span>
+      <p class="content-photo__main-text content-photo__main-text--top">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+      <img class="content-photo__icon-heart content-photo__icon-heart--top" src="img/icon-heart.svg">
+      <span class="content-photo__number-likes content-photo__number-likes--top">нравится: 215</span>
     </div>
-    <div class="content-photo__post">
-      <picture>
+    <div class="content-photo__post content-photo__post--2">
         <source media="(min-width: 960px)" srcset="img/photo-1-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-1-mobile@1x.jpg">
         <img src="img/photo-1-mobile@1x.jpg" alt="заглушка">
       </picture>
-      <br>
+
       <span class="content-photo__name-user">Левон</span>
       <time class="content-photo__date">(5 часов назад)</time>
       <p class="content-photo__main-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-      <img src="img/icon-heart.svg">
+      <img class="content-photo__icon-heart" src="img/icon-heart.svg">
       <span class="content-photo__number-likes">нравится: 356</span>
     </div>
-    <div class="content-photo__post">
-      <picture>
+    <div class="content-photo__post content-photo__post--3">
+      <picture class="content-photo__picture">
         <source media="(min-width: 960px)" srcset="img/photo-2-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-2-mobile@1x.jpg">
         <img src="img/photo-2-mobile@1x.jpg" alt="заглушка">
       </picture>
       <span class="content-photo__name-user">Антон</span>
-      <time class="content-photo__date">12 часов назад)</time>
-      <br>
+
+      <time class="content-photo__date">(12 часов назад)</time>
       <p class="content-photo__main-text">Соседи будут рады!</p>
-      <img src="img/icon-heart.svg">
+      <img class="content-photo__icon-heart" src="img/icon-heart.svg">
       <span class="content-photo__number-likes">нравится: 666</span>
     </div>
-    <div class="content-photo__post">
-      <picture>
+    <div class="content-photo__post content-photo__post--4">
+      <picture class="content-photo__picture">
         <source media="(min-width: 960px)" srcset="img/photo-3-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-3-mobile@1x.jpg">
         <img src="img/photo-3-mobile@1x.jpg" alt="заглушка">
       </picture>
       <span class="content-photo__name-user">Борис</span>
       <time class="content-photo__date">(20 часов назад)</time>
-      <br>
+
       <p class="content-photo__main-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-      <img src="img/icon-heart.svg">
+      <img class="content-photo__icon-heart" src="img/icon-heart.svg">
       <span class="content-photo__number-likes">нравится: 215</span>
     </div>
-    <div class="content-photo__post">
-      <picture>
+    <div class="content-photo__post content-photo__post--5">
+      <picture class="content-photo__picture">
         <source media="(min-width: 960px)" srcset="img/photo-4-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-4-mobile@1x.jpg">
         <img src="img/photo-4-mobile@1x.jpg" alt="заглушка">
       </picture>
       <span class="content-photo__name-user">Сергей</span>
       <time class="content-photo__date">(25 часов назад)</time>
-      <br>
+
       <p class="content-photo__main-text">Самая кубанская в мире!</p>
-      <img src="img/icon-heart.svg">
+      <img class="content-photo__icon-heart" src="img/icon-heart.svg">
       <span class="content-photo__number-likes">нравится: 4</span>
     </div>
-    <div class="content-photo__post">
-      <picture>
+    <div class="content-photo__post content-photo__post--6">
+      <picture class="content-photo__picture">
         <source media="(min-width: 960px)" srcset="img/photo-5-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-5-mobile@1x.jpg">
         <img src="img/photo-5-mobile@1x.jpg" alt="заглушка">
@@ -207,11 +211,12 @@
       <span class="content-photo__name-user">Максим</span>
       <time class="content-photo__date">(40 часов назад)</time>
       <p class="content-photo__main-text">Где снег-то?</p>
-      <img src="img/icon-heart.svg">
+
+      <img class="content-photo__icon-heart" src="img/icon-heart.svg">
       <span class="content-photo__number-likes">нравится: 150</span>
     </div>
-    <div class="content-photo__post">
-      <picture>
+    <div class="content-photo__post content-photo__post--7">
+      <picture class="content-photo__picture">
         <source media="(min-width: 960px)" srcset="img/photo-6-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-6-mobile@1x.jpg">
         <img src="img/photo-6-mobile@1x.jpg" alt="заглушка">
@@ -219,7 +224,8 @@
       <span class="content-photo__name-user">Надежда</span>
       <time class="content-photo__date">(45 часов назад)</time>
       <p class="content-photo__main-text">Всем GM и взаимные лайки!</p>
-      <img src="img/icon-heart.svg">
+
+      <img class="content-photo__icon-heart" v src="img/icon-heart.svg">
       <span class="content-photo__number-likes">нравится: 2560</span>
     </div>
   </div>
@@ -228,18 +234,28 @@
   <div class="post-photo">
     <p class="post-photo__description">Затмите их всех!
       <br>Выкладывайте все, что накопилось в телефоне!</p>
-    <form class="photo-filter">
-      <picture>
+
+    <form class="post-photo__filter">
+      <picture class="post-photo__upload">
         <source media="(min-width: 960px)" srcset="img/photo-7-mobile@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-7-mobile@1x.jpg">
         <img src="img/photo-7-mobile@1x.jpg" alt="заглушка">
       </picture>
-      <button class="photo-filter__btn photo-filter__btn--active" type="button"><img src="http://placehold.it/50x50"></button>
-      <button class="photo-filter__btn photo-filter__btn--active" type="button"><img src="http://placehold.it/50x50"></button>
-      <button class="photo-filter__btn photo-filter__btn--active" type="button"><img src="http://placehold.it/50x50"></button>
-      <input class="photo-filter__slider" type="range" min="0" max="100" step="1" value="50">
-      <button class="photo-filter__submit-btn photo-filter__submit-btn--active" type="submit">Запостить</button>
-      <button class="photo-filter__submit-btn photo-filter__submit-btn--active" type="reset">Отмена</button>
+
+      <div class="post-photo__box1">
+        <a class="btn btn__photo btn__photo--crop" href="#"></a>
+        <a class="btn btn__photo btn__photo--fill" href="#"></a>
+        <a class="btn btn__photo btn__photo--contrast" href="#"></a>
+      </div>
+      <div class="post-photo__box2">
+        <input class="post-photo__slider post-photo__slider--1" type="range" min="0" max="100" step="1" value="50">
+        <input class="post-photo__slider post-photo__slider--2" type="range" min="0" max="100" step="1" value="50">
+        <input class="post-photo__slider post-photo__slider--3" type="range" min="0" max="100" step="1" value="50">
+      </div>
+      <div class="post-photo__box3">
+        <button class="btn btn--pink" type="submit">Запостить</button>
+        <button class="btn btn--pink" type="reset">Отмена</button>
+      </div>
     </form>
   </div>
 

@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'mixins';
 .page-footer {
-  outline: 3px solid @pink;
   &--main-page {
     display: none;
     @media (min-width: @screen_tablet) {
@@ -12,6 +11,10 @@
     .container();
     @media (min-width: @screen_tablet) {
       width: @width-container--tablet;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
       padding-top: 33px;
       padding-bottom: 33px;
     }
@@ -51,7 +54,7 @@
 }
 
 .page-footer__logo:active .logo-blue__text {
-  fill: @grey-dark;
+  fill: @blue;
 }
 
 .page-footer__logo:active .logo-blue {
@@ -87,7 +90,7 @@
     margin-right: 0;
   }
   &:hover {
-    border-color: @grey-dark;
+    border-color: @blue;
   }
   &:active {
     opacity: 0.3;
@@ -131,7 +134,7 @@
     fill: @pink;
   }
   &__link:hover &__logo {
-    fill: @grey-dark;
+    fill: @blue;
   }
   &__link:active &__logo {
     opacity: 0.3;
