@@ -61,12 +61,44 @@
     &--green:disabled {
       background: #e5e5e5;
     }
-    &--pink {
-      padding: 14px 5px 14px;
+    &--submit {
+      padding-top: 14px;
+      padding-bottom: 14px;
       font-size: @font-size-big;
       font-weight: 700;
-      color: @text-white;
-      border: 3px solid @text-white;
+      color: @pink;
+      border: 3px solid @pink;
+      border-radius: 27px;
+      background: @bg-white;
+      text-decoration: none;
+      @media (min-width: @screen_tablet) {
+        width: 276px;
+        margin-left: 0;
+      }
+      @media (min-width: @screen_desktop) {
+        width: 296px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 1.3125rem;
+      }
+    }
+    &--submit:hover {
+      color: @bg-white;
+      background: @pink;
+    }
+    &--submit:active {
+      color: rgba(255, 255, 255, 0.3);
+      background: @pink;
+    }
+      
+       &--cancel {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: @font-size-big;
+      font-weight: 700;
+      color: #dddfe0;
+      border: 3px solid #dddfe0;
+       background: @bg-white;
       border-radius: 27px;
       text-decoration: none;
       @media (min-width: @screen_tablet) {
@@ -80,16 +112,15 @@
         font-size: 1.3125rem;
       }
     }
-    &--pink:hover {
-      color: @pink;
-      background: @bg-white;
+    &--cancel:hover {
+      color: #b5b9bc;
+      border-color: #b5b9bc;
     }
-    &--pink:active {
-      color: rgba(210, 40, 86, 0.3);
+    &--cancel:active {
+      color: #dddfe0;
+      background: #b5b9bc;
     }
-    &--pink:disabled {
-      background: #e5e5e5;
-    }
+      
     &__photo {
       margin-top: 40px;
       width: 45px;
