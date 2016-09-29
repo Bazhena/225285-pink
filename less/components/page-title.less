@@ -7,31 +7,37 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(/img/bg-back-mobile@2x.jpg);
+  }
   @media (min-width: @screen_tablet) {
-    background-image: url(/img/bg-back-mobile@1x.jpg);
+    background-image: url(/img/bg-back-tablet@1x.jpg);
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(/img/bg-back-tablet@2x.jpg);
+    }
   }
-}
-
-&--inner {
-  @media (min-width: @screen_desktop) {
-    background-image: url(/img/bg-back-mobile@1x.jpg);
+  &--inner {
+    @media (min-width: @screen_desktop) {
+      background-image: url(/img/bg-back-desktop@1x.jpg);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(/img/bg-back-desktop@2x.jpg);
+      }
+    }
   }
-}
-
-.page-title__container {
-  .container();
-  padding-top: 77px;
-  padding-bottom: 37px;
-  @media (min-width: @screen_tablet) {
-    padding-top: 180px;
-    padding-bottom: 80px;
+  &__container {
+    .container();
+    padding-top: 77px;
+    padding-bottom: 37px;
+    @media (min-width: @screen_tablet) {
+      padding-top: 180px;
+      padding-bottom: 80px;
+    }
   }
-}
-
-.page-title__inner-container {
-  @media (min-width: @screen_desktop) {
-    padding-top: 172px;
-    padding-bottom: 101px;
+  &__inner-container {
+    @media (min-width: @screen_desktop) {
+      padding-top: 172px;
+      padding-bottom: 101px;
+    }                                                                                                                                                                                                       
   }
 }
 
@@ -42,17 +48,17 @@
   background-position: 5% bottom, center top;
   background-repeat: no-repeat, no-repeat;
   background-size: 258px auto, cover;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(/img/iphone-hand-mobile@2x.png), url(/img/bg-back-mobile@2x.jpg);
+  }
   @media (min-width: 350px) {
     background-position: 20% bottom, center top;
-    background-size: 258px 286px, cover;
   }
   @media (min-width: 500px) {
     background-position: 30% bottom, center top;
-    background-size: 258px 286px, cover;
   }
   @media (min-width: 550px) {
     background-position: 40% bottom, center top;
-    background-size: 258px 286px, cover;
   }
   @media (min-width: @screen_tablet) {
     background: none;

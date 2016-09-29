@@ -5,10 +5,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    outline: 3px solid @pink;
     font-size: @font-size;
     line-height: 2.142857143;
     color: @grey-dark;
+    margin-bottom: -21%;
     @media (min-width: @screen_tablet) {
       margin-bottom: 35px;
     }
@@ -20,27 +20,37 @@
       .container();
       .clearfix();
       &--1 {
-        flex-basis: 90%;
+        flex-basis: @width-container;
+        margin-top: -2.3%;
+        margin-bottom: -1%;
         @media (min-width: @screen_tablet) {
+          flex-basis: 94.7%;
+          margin-left: -7%;
           order: 0;
         }
         @media (min-width: @screen_desktop) {
           margin-right: 55px;
           flex-basis: 38%;
+          margin-bottom: 0%;
         }
       }
       &--2 {
-        flex-basis: 90%;
+        flex-basis: 100%;
+        background-color: @bg-grey;
         @media (min-width: @screen_tablet) {
           order: 3;
+          flex-basis: @width-container--tablet;
+          background-color: @bg-white;
         }
         @media (min-width: @screen_desktop) {
           flex-basis: 80%;
         }
       }
       &--3 {
-        flex-basis: 90%;
+        flex-basis: @width-container;
+        margin-bottom: 2.4%;
         @media (min-width: @screen_tablet) {
+          flex-basis: @width-container--tablet;
           order: 2;
         }
         @media (min-width: @screen_desktop) {
@@ -48,9 +58,14 @@
         }
       }
       &--4 {
-        flex-basis: 90%;
+        flex-basis: 100%;
+        background-color: @bg-grey;
+        margin-bottom: 7%;
         @media (min-width: @screen_tablet) {
+          flex-basis: @width-container--tablet;
           order: 1;
+          background-color: @bg-white;
+          margin-top: -2%;
         }
         @media (min-width: @screen_desktop) {
           flex-basis: 37%;
@@ -58,9 +73,10 @@
         }
       }
       &--5 {
-        flex-basis: 90%;
+        flex-basis: @width-container;
         @media (min-width: @screen_tablet) {
           order: 4;
+          flex-basis: @width-container--tablet;
         }
         @media (min-width: @screen_desktop) {
           flex-basis: 80%;
@@ -68,15 +84,13 @@
       }
     }
     &__description {
-      margin-top: 45px;
+      margin-top: 14.5%;
+      flex-basis: @width-container;
       @media (min-width: @screen_tablet) {
-        width: 85%;
-        margin: 95px auto 12px;
+        flex-basis: 75%;
+        margin: 13.3% auto 7.5%;
         font-size: @font-size-big;
         line-height: @line-height-base;
-      }
-      @media (min-width: @screen_tablet) {
-        margin-bottom: 42px;
       }
     }
     &__description--full {
@@ -100,7 +114,9 @@
     outline: none;
     font-size: @font-size-big;
     line-height: @line-height-base;
-    @media (min-width: @screen_tablet) {}
+    @media (min-width: @screen_tablet) {
+      margin-bottom: 7.3%;
+    }
     @media (min-width: @screen_desktop) {
       margin-top: 30px;
     }
@@ -138,12 +154,13 @@
     }
     &--checkbox:checked ~ .achievement__item::after {
       position: absolute;
-      top: 5px;
-      left: 9px;
+      top: 2px;
+      left: 7px;
       width: 22px;
       height: 16px;
       content: "";
-      background: url(/img/icon-yes.svg) 0 0 no-repeat;
+      background: url(/img/icon-check.svg) 0 0 no-repeat;
+      background-size: 22px 17px;
     }
   }
   
@@ -221,19 +238,25 @@
     line-height: @line-height-h2;
     text-transform: uppercase;
     color: @pink;
+    font-size: 0.875rem;
     &--name {
       float: left;
-      margin: 20px 5px 0 15px;
+      margin: 0.1% 1% 3.5% 7.8%;
       text-align: left;
+      @media (min-width: @screen_tablet) {
+      margin: 0% 3.5% 0% 5.8%;
+      }
       @media (min-width: @screen_desktop) {
         margin-right: 5px;
       }
     }
     &--info {
+      text-align: left;
+      margin: 0.9% 1% 3.5% 9%;
       @media (min-width: @screen_tablet) {
         margin-top: 15px;
         margin-bottom: 25px;
-        text-align: left;
+        
       }
       @media (min-width: @screen_desktop) {
         padding: 0;
@@ -248,10 +271,11 @@
       }
     }
     &--achievement {
-      margin-top: 15px;
-      margin-bottom: 43px;
+      margin-bottom: 0;
+      width: 80%;
     }
     &--legend {
+      margin-bottom: 1.6%;
       @media (min-width: @screen_tablet) {
         padding-right: 5px;
         padding-left: 5px;
@@ -278,7 +302,9 @@
       margin-bottom: 20px;
     }
     &__item {
-      margin-bottom: 35px;
+      margin-bottom: 0;
+      margin-top: 4.1%;
+      margin-left: -22.7%;
       @media (min-width: @screen_desktop) {
         width: 75%;
         margin-top: 23px;
@@ -287,10 +313,11 @@
       }
     }
     &__item:last-child {
-      margin-bottom: 20px;
+      margin-bottom: 6.3%;
     }
     &__title {
       position: relative;
+      margin-left: 24.5%;
       font-size: @font-size-big;
       cursor: pointer;
     }
@@ -315,16 +342,16 @@
     border-color: @pink;
   }
   
-  .form__input[type="checkbox"]:hover ~ .achievement__title::before {
+  .form__input[type="checkbox"]:hover ~ .achievement__item::before {
     border-color: @grey-dark;
   }
   
-  .form__input[type="checkbox"]:active ~ .achievement__title::before {
+  .form__input[type="checkbox"]:active ~ .achievement__item::before {
     border-color: @pink;
   }
   
   .achievement {
-    margin-bottom: -18px;
+    margin-bottom: 4%;
     text-align: left;
     @media (min-width: @screen_desktop) {
       display: flex;
@@ -334,12 +361,11 @@
       align-items: baseline;
     }
     & li {
-      margin-bottom: 40px;
-      margin-left: 10px;
+      margin: 11% 0 2% -4% ;
       font-size: @font-size-big;
       @media (min-width: @screen_tablet) {
-        margin-top: 10px;
-        margin-bottom: 43px;
+        margin-top: ;
+        margin-bottom: ;
       }
       @media (min-width: @screen_desktop) {
         padding: 0;
@@ -348,6 +374,7 @@
     &__item {
       position: relative;
       cursor: pointer;
+      margin-left: 9.8%;
     }
     &__item::before {
       display: inline-block;
@@ -389,8 +416,10 @@
   
   textarea {
     width: 100%;
+    height: 50%;
     box-sizing: border-box;
     resize: none;
+    margin-top: 4%;
     border: 2px solid #e7e7e7;
     text-align: center;
     font-family: @font-family-regular;

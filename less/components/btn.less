@@ -34,8 +34,8 @@
       color: rgba(210, 40, 86, 0.3);
     }
     &--green {
-      width: 50%;
-      margin-top: 40px;
+      width: 100%;
+      margin-top: 12.7%;
       margin-left: auto;
       margin-right: auto;
       padding: 21px;
@@ -64,7 +64,8 @@
     &--submit {
       padding-top: 14px;
       padding-bottom: 14px;
-      font-size: @font-size-big;
+      margin-top: 4.3%;
+      font-size: 1.15rem;
       font-weight: 700;
       color: @pink;
       border: 3px solid @pink;
@@ -72,14 +73,15 @@
       background: @bg-white;
       text-decoration: none;
       @media (min-width: @screen_tablet) {
-        width: 276px;
-        margin-left: 0;
+        width: 260px;
+        margin: -2% 0 0 1.5%;
       }
       @media (min-width: @screen_desktop) {
-        width: 296px;
+        width: 210px;
         padding-top: 12px;
         padding-bottom: 12px;
-        font-size: 1.3125rem;
+        margin: 0 0 0 7.6%;
+        
       }
     }
     &--submit:hover {
@@ -90,26 +92,28 @@
       color: rgba(255, 255, 255, 0.3);
       background: @pink;
     }
-      
-       &--cancel {
+    &--cancel {
       padding-top: 14px;
       padding-bottom: 14px;
-      font-size: @font-size-big;
+      margin-top: -6.6%;
+      margin-bottom: 18.5%;
+      font-size: 1.15rem;
       font-weight: 700;
       color: #dddfe0;
       border: 3px solid #dddfe0;
-       background: @bg-white;
+      background: @bg-white;
       border-radius: 27px;
       text-decoration: none;
       @media (min-width: @screen_tablet) {
-        width: 276px;
-        margin-left: 0;
+        width: 260px;
+        margin: 8% 0 28.7% 1.5%;
       }
       @media (min-width: @screen_desktop) {
-        width: 296px;
+        width: 210px;
         padding-top: 12px;
         padding-bottom: 12px;
-        font-size: 1.3125rem;
+        margin: 0 0 0 10.7%;
+        
       }
     }
     &--cancel:hover {
@@ -120,34 +124,77 @@
       color: #dddfe0;
       background: #b5b9bc;
     }
-      
     &__photo {
-      margin-top: 40px;
-      width: 45px;
-      height: 45px;
-      background-position: center;
-      background-repeat: no-repeat;
-      @media (min-width: @screen_tablet) {}
-      &:hover {}
-      &:active {
-        opacity: 0.3;
-      }
+      margin-top: 14%;
+      @media (min-width: @screen_tablet) {
+        width: 23px;
+        height: 24px;
+        }
+      @media (min-width: @screen_desktop) {
+        width: auto;
+        height: auto;
+        }
       &--crop {
-        background-image: url(/img/icon-editor-crop.svg);
-        @media (min-width: @screen_tablet) {}
-        @media (min-width: @screen_desktop) {}
+        fill: #b5b9bc;
+        margin-left: -5%;
+        @media (min-width: @screen_tablet) {
+          margin-top: 105%;
+        }
+        @media (min-width: @screen_desktop) {
+          flex-basis: 15%;
+          margin-top: 17%;
+          margin-left: -2%;
+        }
+        &:hover {
+          fill: #9aa0a4;
+        }
+        &:active {
+          fill: @pink;
+        }
       }
       &--fill {
-        margin-right: 40px;
-        margin-left: 40px;
-        background-image: url(/img/icon-editor-fill.svg);
-        @media (min-width: @screen_tablet) {}
-        @media (min-width: @screen_desktop) {}
+        margin-left: 9.9%;
+        margin-right: 4%;
+        fill: #b5b9bc;
+        @media (min-width: @screen_tablet) {
+          margin: 99% 0 0;
+        }
+        @media (min-width: @screen_desktop) {
+          flex-basis: 15%;
+          margin-left: -1.4%;
+          margin-right: 5%;
+          margin-top: 17%;
+        }
+        &:hover {
+          fill: #9aa0a4;
+        }
+        &:active {
+          fill: @pink;
+        }
       }
       &--contrast {
-        background-image: url(/img/icon-editor-contrast.svg);
-        @media (min-width: @screen_tablet) {}
-        @media (min-width: @screen_desktop) {}
+        fill: #b5b9bc;
+        margin-top: 16.3%;
+        margin-left: 9%;
+        @media (min-width: @screen_tablet) {
+          margin-top: 128%;
+          margin-left: 11%;
+          width: 17px;
+          height: 17px;
+          }
+        @media (min-width: @screen_desktop) {
+          flex-basis: 15%;
+          margin-top: 47%;
+          margin-left: 3.1%;
+           width: auto;
+        height: auto;
+        }
+        &:hover {
+          fill: #9aa0a4;
+        }
+        &:active {
+          fill: @pink;
+        }
       }
     }
   }
