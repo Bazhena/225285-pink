@@ -4,45 +4,50 @@
 .reviews {
   position: relative;
   overflow: hidden;
-  &__container {
-    .container();
-    padding-top: 28px;
-    @media (min-width: @screen_tablet) {
-      padding-top: 50px;
-    }
-    @media (min-width: @screen_desktop) {
-      width: 700px;
-      padding-bottom: 8px;
-    }
+}
+
+.reviews__container {
+  .container();
+  padding-top: 28px;
+  @media (min-width: @screen_tablet) {
+    padding-top: 50px;
   }
   @media (min-width: @screen_desktop) {
-    padding-top: 130px;
-    background: @bg-white url(/img/icon-quotes.svg) center 75px no-repeat;
+    width: 700px;
+    padding-bottom: 8px;
   }
+}
+
+@media (min-width: @screen_desktop) {
+  padding-top: 130px;
+  background: @bg-white url(../img/icon-quotes.svg) center 75px no-repeat;
 }
 
 .reviews-item {
   margin-bottom: 27px;
-  &--2,
-  &--3 {
-    display: none;
+}
+
+.reviews-item--2,
+.reviews-item--3 {
+  display: none;
+}
+
+.reviews-item__text {
+  line-height: 2.1;
+  @media (min-width: @screen_tablet) {
+    line-height: @line-height-base;
   }
-  &__text {
-    line-height: 2.1;
-    @media (min-width: @screen_tablet) {
-      line-height: @line-height-base;
-    }
+}
+
+.reviews-item__info {
+  display: none;
+  font-size: @font-size;
+  @media (min-width: @screen_tablet) {
+    display: block;
+    margin-top: 5px;
   }
-  &__info {
-    display: none;
-    font-size: @font-size;
-    @media (min-width: @screen_tablet) {
-      display: block;
-      margin-top: 5px;
-    }
-    @media (min-width: @screen_desktop) {
-      font-size: (@font-size-big);
-    }
+  @media (min-width: @screen_desktop) {
+    font-size: (@font-size-big);
   }
 }
 
@@ -76,17 +81,20 @@
   @media (min-width: @screen_desktop) {
     display: block;
   }
-  &__control {
-    position: absolute;
-  }
-  &__control--left {
-    top: -197px;
-    left: 129px;
-  }
-  &__control--right {
-    top: -197px;
-    right: 129px;
-  }
+}
+
+.reviews-slider__control {
+  position: absolute;
+}
+
+.reviews-slider__control--left {
+  top: -197px;
+  left: 129px;
+}
+
+.reviews-slider__control--right {
+  top: -197px;
+  right: 129px;
 }
 
 .reviews-slider__control:hover .control-color {

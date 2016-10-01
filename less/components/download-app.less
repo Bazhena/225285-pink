@@ -10,37 +10,40 @@
       font-size: @font-size-big;
       background: none;
     }
-    &__container {
-      .container();
-      padding-top: 28px;
-      padding-bottom: 21px;
-      @media (min-width: @screen_tablet) {
-        width: 300px;
-        padding: 5px 0;
-      }
-      @media (min-width: @screen_desktop) {
-        width: 300px;
-        padding: 17px 0;
-      }
+  }
+  
+  .download-app__container {
+    .container();
+    padding-top: 28px;
+    padding-bottom: 21px;
+    @media (min-width: @screen_tablet) {
+      width: 300px;
+      padding: 5px 0;
     }
-    &__description {
-      @media (min-width: @screen_tablet) {
-        width: 300px;
-        line-height: (@line-height-base - 0.2);
-      }
+    @media (min-width: @screen_desktop) {
+      width: 300px;
+      padding: 17px 0;
     }
-    &__platforms {
-      height: 56.753px;
-      margin: 31px auto 24px;
-      padding: auto;
-      @media (min-width: @screen_tablet) {
-        margin-top: 45px;
-        margin-bottom: 34px;
-      }
-      @media (min-width: @screen_desktop) {
-        margin-top: 65px;
-        margin-bottom: 56px;
-      }
+  }
+  
+  .download-app__description {
+    @media (min-width: @screen_tablet) {
+      width: 300px;
+      line-height: (@line-height-base - 0.2);
+    }
+  }
+  
+  .download-app__platforms {
+    height: 56.753px;
+    margin: 31px auto 24px;
+    padding: auto;
+    @media (min-width: @screen_tablet) {
+      margin-top: 45px;
+      margin-bottom: 34px;
+    }
+    @media (min-width: @screen_desktop) {
+      margin-top: 65px;
+      margin-bottom: 56px;
     }
   }
   
@@ -56,12 +59,12 @@
       margin-right: 0;
     }
     &--Apple {
-      background-image: url(/img/logo-apple.svg);
+      background-image: url(../img/logo-apple.svg);
     }
     &--Android {
-      background-image: url(/img/logo-android.svg);
+      background-image: url(../img/logo-android.svg);
     }
     &--Windows {
-      background-image: url(/img/logo-microsoft.svg);
+      background-image: url(../img/logo-microsoft.svg);
     }
   }
