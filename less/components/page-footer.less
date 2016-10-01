@@ -1,34 +1,34 @@
 @import 'variables';
 @import 'mixins';
-.page-footer {
-  &--main-page {
-    display: none;
-    @media (min-width: @screen_tablet) {
-      display: block;
-    }
-  }
-  &__container {
-    .container();
-    @media (min-width: @screen_tablet) {
-      width: @width-container--tablet;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      padding-top: 33px;
-      padding-bottom: 33px;
-    }
-    @media (min-width: @screen_desktop) {
-      width: @width-container--desktop;
-      padding-top: 6.1%;
-    }
-  }
-  &__logo {
+.page-footer--main-page {
+  display: none;
+  @media (min-width: @screen_tablet) {
     display: block;
-    margin: 40px auto 34px;
-    @media (min-width: @screen_tablet) {
-      margin: auto 0;
-    }
+  }
+}
+
+.page-footer__container {
+  .container();
+  @media (min-width: @screen_tablet) {
+    width: @width-container--tablet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  @media (min-width: @screen_desktop) {
+    width: @width-container--desktop;
+    padding-top: 6.1%;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  margin: 40px auto 34px;
+  @media (min-width: @screen_tablet) {
+    margin: auto 0;
   }
 }
 
@@ -106,10 +106,6 @@
   }
   &--facebook {
     background-image: url(../img/icon-facebook.svg);
-    @media (min-width: @screen_tablet) {
-      margin-left: 0px;
-      margin-right: 24px;
-    }
   }
   &--youtube {
     background-image: url(../img/icon-youtube.svg);
@@ -131,25 +127,30 @@
     margin-right: -0.2%;
     margin-top: 1.2%;
   }
-  &__text {
-    display: inline-block;
-    vertical-align: middle;
+}
+
+.copyright__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+  @media (min-width: @screen_desktop) {
+    margin-left: 7px;
   }
-  &__link {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 12px;
-    @media (min-width: @screen_desktop) {
-      margin-left: 7px;
-    }
-  }
-  &__logo {
-    fill: @pink;
-  }
-  &__link:hover &__logo {
-    fill: @blue;
-  }
-  &__link:active &__logo {
-    opacity: 0.3;
-  }
+}
+
+.copyright__logo {
+  fill: @pink;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: @blue;
+}
+
+.copyright__link:active .copyright__logo {
+  opacity: 0.3;
 }

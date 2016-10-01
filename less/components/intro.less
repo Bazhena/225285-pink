@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 .intro {
+  
   @media (min-width: @screen_tablet) {
     background-color: @bg-dark;
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
@@ -23,16 +24,17 @@
   (min-width: @screen_desktop) and (min-resolution: 1.5dppx) {
     background-image: url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
   }
-  &__container {
-    @media (min-width: @screen_tablet) {
-      .container();
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 182px 0 94px;
-    }
-    @media (min-width: @screen_tablet) {
-      padding: 199px 0 94px;
-    }
+}
+
+.intro__container {
+  @media (min-width: @screen_tablet) {
+    .container();
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 182px 0 94px;
+  }
+  @media (min-width: @screen_tablet) {
+    padding: 199px 0 94px;
   }
 }
