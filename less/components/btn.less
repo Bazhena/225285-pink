@@ -64,6 +64,36 @@
     &--green:disabled {
       background: #e5e5e5;
     }
+    &--green-pp {
+      width: 100%;
+      margin-top: 35px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 21px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: @green;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      cursor: pointer;
+      @media (min-width: @screen_tablet) {
+        margin-top: 68px;
+        max-width: 255px;
+      }
+      @media (min-width: @screen_desktop) {
+        margin-top: 66px;
+      }
+    }
+    &--green-pp:hover {
+      background: darken(@green, 10%)
+    }
+    &--green-pp:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    &--green-pp:disabled {
+      background: #e5e5e5;
+    }
     &--submit {
       padding-top: 14px;
       padding-bottom: 14px;
@@ -77,7 +107,7 @@
       text-decoration: none;
       @media (min-width: @screen_tablet) {
         width: 260px;
-        margin: 0 auto 8px;
+        margin: 0 0 8px 16px;
       }
       @media (min-width: @screen_desktop) {
         width: 180px;
@@ -134,7 +164,7 @@
         height: 24px;
       }
       @media (min-width: @screen_desktop) {
-       width: 48px;
+        width: 48px;
         height: 48px;
       }
       &--crop {
@@ -146,7 +176,6 @@
         }
         @media (min-width: @screen_desktop) {
           flex-basis: 15%;
-        
           margin-top: 5px;
           margin-left: -3px;
         }
@@ -167,7 +196,6 @@
         @media (min-width: @screen_desktop) {
           flex-basis: 15%;
           margin-top: 15px;
-          
         }
         &:hover {
           fill: #9aa0a4;
@@ -189,7 +217,7 @@
         @media (min-width: @screen_desktop) {
           flex-basis: 15%;
           width: 31.92px;
-        height: 31.92px;
+          height: 31.92px;
           margin-top: 18px;
           margin-left: 5px;
         }

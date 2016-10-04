@@ -131,20 +131,22 @@
   &--1 {
     
     @media (min-width: @screen_tablet) {
-      flex-basis: 74.5%;
+      width: 74.5%;
       margin-left: 30px;
       margin-bottom: 0;
+      padding: 0;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 70.5%;
+      width: 70.5%;
       margin-left: 46px;
     }
   }
   &--2 {
     @media (min-width: @screen_tablet) {
-      flex-basis: 74.5%;
+      width: 74.5%;
       margin-left: 28px;
-      margin-top: 0;
+      margin-top: 6px;
+      padding: 0;
     }
     @media (min-width: @screen_desktop) {
       flex-basis: 70.5%;
@@ -153,12 +155,13 @@
   }
   &--3 {
     @media (min-width: @screen_tablet) {
-      flex-basis: 74.5%;
+      width: 74.5%;
       margin-left: 32px;
-      margin-top: 0;
+      margin-top: 5px;
+      padding: 0;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 70.5%;
+      width: 70.5%;
       margin-left: 54px;
     }
   }
@@ -178,7 +181,7 @@ input[type=range].post-photo__slider:focus {
 
 input[type=range].post-photo__slider::-webkit-slider-runnable-track {
   width: 76%;
-  height: 1.5px;
+  height: 2px;
   cursor: pointer;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   background: #000000;
@@ -227,8 +230,8 @@ input[type=range].post-photo__slider::-moz-range-track {
 input[type=range].post-photo__slider::-moz-range-thumb {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   border: 3px solid #d22856;
-  height: 14px;
-  width: 14px;
+  height: 8px;
+  width: 8px;
   border-radius: 16px;
   background: #ffffff;
   cursor: pointer;
@@ -280,7 +283,7 @@ input[type=range].post-photo__slider::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -4px;
+  margin-top: -2px;
 }
 
 input[type=range].post-photo__slider:focus::-ms-fill-lower {
