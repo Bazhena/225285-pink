@@ -1,31 +1,57 @@
 @import 'variables';
 .popup {
   display: none;
+  border: 1px solid @pink;
   position: fixed;
   width: 100%;
   padding-top: 25px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   z-index: 100;
   background: @bg-white;
+  @media (min-width: @screen_tablet) {
+    width: 456px;
+    margin-left: 98px;
+  }
+  @media (min-width: @screen_desktop) {
+    margin-left: 369px;
+  }
   &--success {
-    top: 200px;
+    top: 495px;
   }
   &--fail {
-    top: 50px;
+    top: 150px;
     padding-bottom: 30px;
   }
   &__title {
-    margin: 0 auto 10px;
+    margin: 11px auto 10px;
+    font-size: @font-size-big;
+    @media (min-width: @screen_tablet) {
+      font-size: 2rem;
+      width: 60%;
+      margin: 12px auto 10px;
+      line-height: @line-height-h1;
+    }
   }
   &__text {
-    margin: 10px auto 20px;
+    margin: 22px auto 37px;
+    text-align: center;
+    @media (min-width: @screen_tablet) {
+      width: 85%;
+      line-height: @line-height-h2;
+      margin: 25px auto 32px;
+    }
   }
-  .btn--green {
+  .btn--green-pp {
     width: auto;
-    margin: 0 auto;
+    margin: auto;
   }
-  .form-section--grey {
+  .form-section--popup {
     padding-top: 30px;
     padding-bottom: 30px;
+    @media (min-width: @screen_tablet) {
+      background-color: @bg-grey;
+      padding-top: 47px;
+      padding-bottom: 50px;
+    }
   }
 }

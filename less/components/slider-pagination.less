@@ -12,22 +12,25 @@
       display: none;
     }
   }
-  &__control {
-    display: inline-block;
-    vertical-align: middle;
-    width: 6px;
-    height: 6px;
-    margin-right: 15px;
-    background-color: #bec2c7;
-    border-radius: 50%;
-  }
-  &__control:last-child {
-    margin-right: 0;
-  }
-  &__control--active {
-    border: 3px solid @grey-dark;
-    background-color: @bg-white;
-  }
+}
+
+.slider-pagination__control {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin-right: 15px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.slider-pagination__control:last-child {
+  margin-right: 0;
+}
+
+.slider-pagination__control--active {
+  border: 3px solid @grey-dark;
+  background-color: @bg-white;
 }
 
 .slider-pagination__control {
