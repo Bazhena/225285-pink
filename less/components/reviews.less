@@ -6,6 +6,17 @@
   overflow: hidden;
 }
 
+.icon-quotes {
+  display: none;
+  @media (min-width: @screen_desktop) {
+    display: block;
+    margin: 0 555px 0;
+    padding-top: 130px;
+    width: 78.672px;
+    height: 63.789px;
+  }
+}
+
 .reviews__container {
   .container();
   padding-top: 28px;
@@ -16,11 +27,6 @@
     width: 700px;
     padding-bottom: 8px;
   }
-}
-
-@media (min-width: @screen_desktop) {
-  padding-top: 130px;
-  background: @bg-white url(../img/icon-quotes.svg) center 75px no-repeat;
 }
 
 .reviews-item {

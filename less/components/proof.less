@@ -57,15 +57,6 @@
   }
 }
 
-.timer__color {
-  @media (min-width: @screen_tablet) {
-    fill: #eeeeee;
-  }
-  @media (min-width: @screen_desktop) {
-    fill: #dedede;
-  }
-}
-
 .timer {
   position: relative;
   width: 262px;
@@ -110,8 +101,12 @@
 .timer__image {
   width: 262px;
   height: 302px;
+  @media (min-width: @screen_tablet) {
+    fill: #eeeeee;
+  }
   @media (min-width: @screen_desktop) {
     width: 298.001px;
     height: 345.097px;
+    fill: #dedede;
   }
 }

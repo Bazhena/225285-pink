@@ -6,7 +6,7 @@
   line-height: 1.7em;
   margin-bottom: 41px;
   @media (min-width: @screen_tablet) {
-    margin-bottom: -5px;
+    margin-bottom: -10px;
   }
   @media (min-width: @screen_desktop) {
     margin-bottom: 57px;
@@ -127,13 +127,16 @@
 }
 
 .post-photo__slider {
-  height: 60px ;
+  @media (min-width: @screen_tablet) {
+  height: 60px;
+    }
   &--1 {
-    
+    width: 74.5%; 
     @media (min-width: @screen_tablet) {
       width: 74.5%;
       margin-left: 30px;
       margin-bottom: 0;
+      margin-top: 0;
       padding: 0;
     }
     @media (min-width: @screen_desktop) {
@@ -169,7 +172,6 @@
 
 input[type=range].post-photo__slider {
   -webkit-appearance: none;
-  width: 76%;
   background-color: @bg-grey;
   
   

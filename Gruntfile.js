@@ -31,11 +31,6 @@ module.exports = function (grunt) {
     },
 
     svgstore: {
-      options: {
-        svg: {
-          style: "display: none"
-        }
-      },
       symbols: {
         files: {
           "build/img/symbols.svg": ["img/icons/*.svg "]
@@ -64,7 +59,7 @@ module.exports = function (grunt) {
       }
     },
 
-      cssmin: {
+    cssmin: {
       options: {
         keepSpecialComments: 0,
         report: "gzip"
@@ -75,8 +70,8 @@ module.exports = function (grunt) {
         }
       }
     },
-    
-    
+
+
     less: {
       style: {
         files: {
@@ -98,9 +93,7 @@ module.exports = function (grunt) {
               "last 2 Edge versions"
             ]
             }),
-            require("css-mqpacker")({
-              sort: true
-            })
+            require("css-mqpacker")()
           ]
         },
         src: "build/css/*.css"
@@ -147,8 +140,6 @@ module.exports = function (grunt) {
     "cssmin",
     "cssmin",
     "symbols",
-    "imagemin",
-    "browserSync",
-    "watch"
+    "imagemin"
   ]);
 };
