@@ -26,9 +26,9 @@
 
 .page-footer__logo {
   display: block;
-  margin: 24px auto 34px;
+  margin: 25px auto 34px -1px;
   @media (min-width: @screen_tablet) {
-    margin: auto 0;
+    margin: -9px 0 0;
   }
 }
 
@@ -69,14 +69,14 @@
   margin-bottom: 27px;
   @media (min-width: @screen_tablet) {
     width: 200px;
-    margin: 0 15px 0 0;
+    margin: 0px 0 0 10px;
   }
 }
 
 .social-link {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 12px;
+  margin-right: 9px;
   width: 45px;
   height: 45px;
   font-size: 0;
@@ -85,7 +85,8 @@
   background-position: center;
   background-repeat: no-repeat;
   @media (min-width: @screen_tablet) {
-    margin-right: 5px;
+    margin-right: 7px;
+    margin-top: -6px;
   }
   @media (min-width: @screen_desktop) {
     margin-right: -2px;
@@ -113,17 +114,14 @@
 }
 
 .copyright {
-  margin-bottom: 40px;
   @media (min-width: @screen_tablet) {
     width: 140px;
     margin-top: 12px;
     margin-bottom: 0;
     margin-right: -7px;
-    font-size: @font-size;
   }
   @media (min-width: @screen_desktop) {
     width: 160px;
-    font-size: @font-size-big;
     margin-right: -2px;
     margin-top: 12px;
   }
@@ -132,18 +130,29 @@
 .copyright__text {
   display: inline-block;
   vertical-align: middle;
+  margin-left: -4px;
+  font-size: 0.9rem;
+  @media (min-width: @screen_tablet) {
+    margin-left: 2px;
+    margin-top: 6px;
+    font-size: 0.9rem;
+  }
+  @media (min-width: @screen_desktop) {
+    font-size: @font-size-big;
+  }
 }
 
 .copyright__link {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 12px;
+  margin-left: 8px;
   @media (min-width: @screen_tablet) {
     margin-top: 2px;
+    margin-left: 14px;
   }
   @media (min-width: @screen_desktop) {
-    margin-left: 10px;
-    margin-top: 4px;
+    margin-left: 12px;
+    margin-top: 7px;
   }
 }
 

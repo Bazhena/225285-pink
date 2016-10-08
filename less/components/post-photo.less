@@ -15,7 +15,7 @@
 
 .post-photo__description {
   padding: 15px;
-  margin: 7px 0 28px;
+  margin: 8px 0 28px;
   text-align: center;
   line-height: 2.0;
   font-size: @font-size;
@@ -128,10 +128,10 @@
 
 .post-photo__slider {
   @media (min-width: @screen_tablet) {
-  height: 60px;
-    }
+    height: 60px;
+  }
   &--1 {
-    width: 74.5%; 
+    width: 74.5%;
     @media (min-width: @screen_tablet) {
       width: 74.5%;
       margin-left: 30px;
@@ -173,8 +173,6 @@
 input[type=range].post-photo__slider {
   -webkit-appearance: none;
   background-color: @bg-grey;
-  
-  
 }
 
 input[type=range].post-photo__slider:focus {
@@ -220,8 +218,8 @@ input[type=range].post-photo__slider:focus::-webkit-slider-thumb {
 }
 
 input[type=range].post-photo__slider::-moz-range-track {
-  width: 76%;
-  height: 1.5px;
+  width: 100%;
+  height: 2px;
   cursor: pointer;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   background: #000000;
@@ -254,8 +252,8 @@ input[type=range].post-photo__slider:focus::-moz-range-thumb {
 }
 
 input[type=range].post-photo__slider::-ms-track {
-  width: 76%;
-  height: 1.5px;
+  width: 100%;
+  height: 2px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
@@ -285,7 +283,6 @@ input[type=range].post-photo__slider::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -2px;
 }
 
 input[type=range].post-photo__slider:focus::-ms-fill-lower {
@@ -305,5 +302,4 @@ input[type=range].post-photo__slider:focus::-ms-thumb {
   background: #d22856;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -4;
 }

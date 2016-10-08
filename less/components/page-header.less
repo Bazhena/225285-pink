@@ -29,7 +29,7 @@
     padding-top: 18px;
     padding-bottom: 17px;
     @media (min-width: @screen_tablet) {
-      padding-top: 30px;
+      padding-top: 25px;
       padding-bottom: 32px;
     }
   }
@@ -87,8 +87,10 @@
     width: 50px;
     height: 25px;
     cursor: pointer;
+    margin-right: -3px;
     @media (min-width: @screen_tablet) {
-      margin-top: 10px;
+      margin-top: 16px;
+      margin-right: -6px;
     }
     @media (min-width: @screen_desktop) {
       display: none;
@@ -102,12 +104,17 @@
     &--close {
       width: 25px;
       height: 25px;
-      font-size: 50px;
-      line-height: 25px;
+      margin-right: -6px;
+      font-size: 55px;
+      line-height: 21px;
       font-family: @font-family-regular;
       font-weight: 300;
       color: @text-white;
       z-index: 70;
+      @media (min-width: @screen_tablet) {
+        margin-right: -4px;
+        margin-top: 19px;
+      }
     }
     &--close:hover {
       color: @pink;
@@ -120,16 +127,18 @@
   .nav-btn {
     display: none;
   }
-.nav-btn:checked ~ .page-header {
-    position: relative;
   
+  .nav-btn:checked ~ .page-header {
+    position: relative;
   }
   
   .nav-btn:checked ~ .page-header--full {
     display: block;
-    margin-bottom:  265px;
+    margin-bottom: 192px;
+    @media (min-width: @screen_tablet) {
+      margin-bottom: 142px;
+    }
   }
-
   
   .main-nav {
     position: absolute;
@@ -141,8 +150,10 @@
     @media (min-width: @screen_desktop) {
       position: static;
       display: block;
+      padding-top: 5px;
+      margin-right: 10px;
       float: right;
-      width: 670px;
+      width: 680px;
       border-top: none;
       background: none;
     }
@@ -151,7 +162,7 @@
   .main-nav__item {
     border-bottom: 1px solid #000000;
     @media (min-width: @screen_desktop) {
-      margin-left: 10.1%;
+      margin-left: 5px;
       border-bottom: none;
     }
   }
@@ -159,14 +170,22 @@
   .main-nav__link {
     display: block;
     text-align: center;
-    padding: 20px 0;
-    font-weight: 700;
+    padding: 19.7px 0;
+    margin-left: 8px;
+    font-weight: 600;
     border-top: 1px solid #485461;
     color: @text-white;
+    font-size: @font-size-h2;
     text-transform: uppercase;
+    line-height: @line-height-h2;
+    @media (min-width: @screen_tablet) {
+      padding: 19.4px 0;
+    }
     @media (min-width: @screen_desktop) {
-      padding: 10px 0;
+      padding: 10px 6px;
+      margin-left: 60px;
       font-size: @font-size-big;
+      ;
       font-weight: @font-weight-base;
       text-transform: none;
       border: none;
@@ -178,7 +197,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: center;
     }
   }
