@@ -157,22 +157,34 @@
           <legend class="form__title form__title--achievement">Ваши безбашенные достижения в путешествии</legend>
           <div class="achievement">
             <div class="form__group form__group--achievement">
-              <input class="form__input form__input--checkbox" type="checkbox" name="shark" id="shark" checked>
-              <label class="achievement__item" for="shark">Сделал селфи с акулой</label>
-              <input class="form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
-              <label class="achievement__item" for="sunburn">Обгорел на пляже</label>
+              <div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="shark" id="shark" checked="checked">
+                <label class="achievement__item" for="shark">Сделал селфи с акулой</label>
+              </div>
+              <div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked="checked">
+                <label class="achievement__item" for="sunburn">Обгорел на пляже</label>
+              </div>
             </div>
             <div class="form__group form__group--achievement">
-              <input class="form__input form__input--checkbox" type="checkbox" name="chuck" id="chuck">
-              <label class="achievement__item" for="chuck">Видел Чака Норриса</label>
-              <input class="form__input form__input--checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-              <label class="achievement__item" for="souvenirs">Накупил сувениров</label>
+              <div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="chuck" id="chuck">
+                <label class="achievement__item" for="chuck">Видел Чака Норриса</label>
+              </div>
+              <div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                <label class="achievement__item" for="souvenirs">Накупил сувениров</label>
+              </div>
             </div>
             <div class="form__group form__group--achievement">
-              <input class="form__input form__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="achievement__item" for="tower">Удержал башню</label>
-              <input class="form__input form__input--checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="achievement__item" for="hotel">Разгромил отель</label>
+              <div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="tower" id="tower" checked="checked">
+                <label class="achievement__item" for="tower">Удержал башню</label>
+              </div>
+              <div>
+                <input class="form__input form__input--checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="achievement__item" for="hotel">Разгромил отель</label>
+              </div>
             </div>
           </div>
         </fieldset>
@@ -201,12 +213,18 @@
       <section class="form-section form-section--app">
         <fieldset class="form__fieldset form__fieldset--app">
           <legend class="form__title form__title--app">С каким приложением путешествовали?</legend>
-          <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked>
-          <label class="user-platform" for="iOS">Pink для IOS</label>
-          <input class="form__input form__input--radio" type="radio" name="platform" value="Android" id="Android">
-          <label class="user-platform" for="Android">Pink на Android</label>
-          <input class="form__input form__input--radio" type="radio" name="platform" value="Windows" id="Windows">
-          <label class="user-platform" for="Windows">Windows Phone</label>
+          <div>
+            <input class="form__input form__input--radio" type="radio" name="iOS" value="Pink для iOS" id="iOS" checked>
+            <label class="user-platform" for="iOS">Pink для IOS</label>
+          </div>
+          <div>
+            <input class="form__input form__input--radio" type="radio" name="Android" value="Android" id="Android">
+            <label class="user-platform" for="Android">Pink на Android</label>
+          </div>
+          <div>
+            <input class="form__input form__input--radio" type="radio" name="Windows" value="Windows" id="Windows">
+            <label class="user-platform" for="Windows">Windows Phone</label>
+          </div>
         </fieldset>
       </section>
     </div>

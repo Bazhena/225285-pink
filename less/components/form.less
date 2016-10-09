@@ -237,13 +237,17 @@
   }
   &--achievement {
     @media (min-width: @screen_desktop) {
-      margin-bottom: 0px;
-      margin-top: 3px;
-      margin-left: -8px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
+      margin-right: 56px;
+    }
+  }
+  &--achievement:last-child {
+    @media (min-width: @screen_desktop) {
+      margin-right: 0;
+      margin-left: 14px;
     }
   }
   &--contacts {
@@ -276,14 +280,15 @@
     border-radius: 2px;
   }
   @media (min-width: @screen_desktop) {
-    padding: 0;
+    padding: 0px;
   }
   &--achievement {
     @media (min-width: @screen_tablet) {
       padding-bottom: 4px;
     }
     @media (min-width: @screen_desktop) {
-      padding-bottom: 9px;
+      padding-bottom: 32px;
+      padding-top: 0px;
     }
   }
   &--app {
@@ -430,11 +435,10 @@
     overflow: hidden;
     padding-bottom: 4px;
     @media (min-width: @screen_tablet) {
-      margin: 0 auto;
-      margin-bottom: 3px;
+      margin: 0 auto 3px;
     }
     @media (min-width: @screen_desktop) {
-      margin: 0 auto 0;
+      margin: 0;
     }
   }
 }
@@ -462,31 +466,34 @@
     margin-bottom: -10px;
     padding-bottom: 0px;
   }
-  &:before {
-    content: "";
-    position: absolute;
-    left: 11px;
-    top: -2px;
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    @media (min-width: @screen_tablet) {
-      left: 1px;
-      top: 1px;
-    }
-    @media (min-width: @screen_desktop) {
-      left: 73px;
-      top: 0px;
-    }
+}
+
+.user-platform::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: -2px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  @media (min-width: @screen_tablet) {
+    left: 1px;
+    top: 1px;
   }
-  &:hover:before {
-    border-color: #283645;
+  @media (min-width: @screen_desktop) {
+    left: 73px;
+    top: 0px;
   }
-  &:active:before {
-    border-color: @pink;
-  }
+}
+
+.form__input[type="radio"]:hover ~ .user-platform::before {
+  border-color: @grey-dark;
+}
+
+.form__input[type="radio"]:active ~ .user-platform::before {
+  border-color: @pink;
 }
 
 .achievement {
@@ -498,11 +505,10 @@
     width: auto;
     display: flex;
     flex-direction: row;
-    min-height: 200px;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 30px;
-    margin-right: 27px;
+    flex-wrap: wrap;
+    min-height: 167px;
+    margin-left: 59px;
+    margin-top: 8px;
   }
 }
 
@@ -521,33 +527,36 @@
     padding-left: 60px;
   }
   @media (min-width: @screen_desktop) {
-    padding-left: 56px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    padding-left: 59px;
+    margin-top: 2px;
+    margin-bottom: 0px;
   }
-  &:before {
-    content: "";
-    position: absolute;
+}
+
+.achievement__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border: 2px solid #e7e7e7;
+  border-radius: 2px;
+  @media (min-width: @screen_tablet) {
+    top: 0px;
+  }
+  @media (min-width: @screen_desktop) {
     left: 0;
-    top: -3px;
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border: 2px solid #e7e7e7;
-    border-radius: 2px;
-    @media (min-width: @screen_tablet) {
-      top: 0px;
-    }
-    @media (min-width: @screen_desktop) {
-      left: 0;
-    }
   }
-  &:hover:before {
-    border-color: #283645;
-  }
-  &:active:before {
-    border-color: @pink;
-  }
+}
+
+.form__input[type="checkbox"]:hover ~ .achievement__item::before {
+  border-color: @grey-dark;
+}
+
+.form__input[type="checkbox"]:active ~ .achievement__item::before {
+  border-color: @pink;
 }
 
 .form-correction {
