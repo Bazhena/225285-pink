@@ -20,58 +20,57 @@
   .container();
   .clearfix();
   &--1 {
-    flex-basis: 88%;
+    width: 280px;
     margin-top: -6px;
     margin-bottom: -4px;
     @media (min-width: @screen_tablet) {
-      flex-basis: 94.7%;
-      margin-left: -32px;
+      width: 620px;
       order: 0;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 37.8%;
-      margin-left: -47px;
+      width: 445px;
+      margin-left: -48px;
       margin-top: 8px;
     }
   }
   &--2 {
-    flex-basis: 100%;
+    width: 320px;
     background-color: @bg-grey;
     margin-bottom: 2px;
     @media (min-width: @screen_tablet) {
       order: 3;
-      flex-basis: 89.5%;
+      width: 620px;
       margin-left: 3px;
       background-color: @bg-white;
       margin-bottom: 23px;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 78.5%;
+      width: 940px;
       margin-bottom: 24px;
     }
   }
   &--3 {
-    flex-basis: 88%;
+    width: 280px;
     margin-bottom: 5px;
     @media (min-width: @screen_tablet) {
-      flex-basis: 89.5%;
+      width: 620px;
       margin-left: 3px;
       order: 2;
       margin-bottom: 12px;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 78.5%;
+      width: 940px;
       margin-left: 0;
       margin-bottom: 12px;
       margin-top: -25px;
     }
   }
   &--4 {
-    flex-basis: 100%;
+    width: 320px;
     background-color: @bg-grey;
     margin-bottom: 24px;
     @media (min-width: @screen_tablet) {
-      flex-basis: 89.5%;
+      width: 620px;
       margin-left: 3px;
       order: 1;
       background-color: @bg-white;
@@ -80,7 +79,7 @@
       margin-bottom: 0px;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 36.3%;
+      width: 435px;
       margin-top: -10px;
       margin-right: -30px;
       margin-bottom: 0;
@@ -88,15 +87,15 @@
     }
   }
   &--5 {
-    flex-basis: 88%;
+    width: 280px;
     @media (min-width: @screen_tablet) {
       order: 4;
-      flex-basis: 89.5%;
+      width: 620px;
       margin-left: 3px;
       margin-bottom: -23px;
     }
     @media (min-width: @screen_desktop) {
-      flex-basis: 78.5%;
+      width: 940px;
       margin-bottom: 0;
     }
   }
@@ -104,16 +103,16 @@
 
 .form__description {
   margin-top: 45px;
-  flex-basis: @width-container;
+  width: 280px;
   @media (min-width: @screen_tablet) {
-    flex-basis: 71%;
+    width: 620px;
     margin-top: 92px;
     margin-bottom: 40px;
     font-size: @font-size-big;
     line-height: @line-height-base;
   }
   @media (min-width: @screen_desktop) {
-    flex-basis: 66%;
+    width: 800px;
     margin: 91px 0 40px 5px;
   }
 }
@@ -319,7 +318,7 @@
       margin: 0 18px 0 36px;
     }
     @media (min-width: @screen_desktop) {
-      margin: 0 18px 0 18px
+      margin: 0 18px 0 14px
     }
   }
   &--number {

@@ -18,7 +18,7 @@
   .container();
   position: relative;
   width: 845px;
-  margin: 48px auto 34px;
+  margin: 55px auto 34px;
   border-collapse: collapse;
   left: 50%;
   transform: translateX(-50%);
@@ -80,7 +80,7 @@
   height: 73px;
   overflow: hidden;
   & p {
-    transform: rotate(-45deg) translateX(-32px) translateY(10px);
+    transform: rotate(-45deg) translateX(-32px) translateY(15px);
     transform-origin: 0 0;
   }
 }
@@ -93,9 +93,9 @@
 }
 
 .price-table__service {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
   font-size: @font-size;
   text-align: left;
   background-color: @bg-white;
@@ -115,13 +115,23 @@
 .price-table__icon-yes {
   width: 26.752px;
   height: 26.752px;
-  margin: 0 75px 0;
+   float: right;
+  margin-right: 17px;
+  @media (min-width: @screen_tablet) {
+    margin: 0 75px 0;
+    float: none;
+  }
 }
 
 .price-table__icon-no {
   width: 26.752px;
   height: 26.752px;
-  margin: 0 75px 0;
+  float: right;
+  margin-right: 17px;
+  @media (min-width: @screen_tablet) {
+    margin: 0 75px 0;
+    float: none;
+  }
 }
 
 .price-table__header--empty {

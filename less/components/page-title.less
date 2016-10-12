@@ -68,7 +68,7 @@
 }
 
 .page-title__main-container {
-  padding-top: 66px;
+  padding-top: 95px;
   padding-bottom: 298px;
   @media (min-width: @screen_tablet) {
     padding: 0;
@@ -82,12 +82,14 @@
   z-index: 100;
   font-weight: 300;
   &--main {
+    visibility: hidden;
     max-width: 300px;
     margin-right: auto;
     margin-left: auto;
     font-family: @font-family-light;
     font-weight: @font-weight-light;
     @media (min-width: @screen_tablet) {
+      visibility: visible;
       margin-top: 5px;
       margin-left: 0;
       font-size: 2.5rem;
