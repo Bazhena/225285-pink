@@ -133,11 +133,23 @@
     position: relative;
   }
   
+  .nav-btn:checked ~ .page-header {
+    @media (min-width: @screen_desktop) {
+      position: absolute;
+    }
+  }
+  
   .nav-btn:checked ~ .page-header--full {
     display: block;
     margin-bottom: 192px;
     @media (min-width: @screen_tablet) {
       margin-bottom: 142px;
+    }
+  }
+  
+  .nav-btn:checked ~ .page-header--full {
+    @media (min-width: @screen_desktop) {
+      margin-bottom: 0px;
     }
   }
   
