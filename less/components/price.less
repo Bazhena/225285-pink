@@ -8,8 +8,13 @@
   overflow: hidden;
   background: @bg-grey url(../img/bg-triangle-white.svg) center top no-repeat;
   background-size: ;
+  @media (min-width: @screen_tablet) {
+    padding-top: 78px;
+    margin-top: -12px;
+  }
   @media (min-width: @screen_desktop) {
     padding-top: 114px;
+    padding-bottom: 68px;
     background-size: 100% auto;
   }
 }
@@ -23,9 +28,9 @@
   left: 50%;
   transform: translateX(-50%);
   @media (min-width: @screen_tablet) {
+    width: 620px;
     position: static;
-    margin: 36px auto 26px;
-    width: @width-container--tablet;
+    margin: 33px auto 26px;
     transform: none;
   }
   @media (min-width: @screen_desktop) {
@@ -42,8 +47,8 @@
   color: @text-white;
   border: 2px solid #e5e5e5;
   @media (min-width: @screen_tablet) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
   @media (min-width: @screen_desktop) {
     padding-top: 11px;
@@ -55,6 +60,12 @@
   font-size: @font-size-big;
   font-weight: (@font-weight-base + 300);
   line-height: 1.2;
+  @media (min-width: @screen_tablet) {
+    font-size: 0.975rem;
+  }
+  @media (min-width: @screen_desktop) {
+    font-size: @font-size-h2;
+  }
 }
 
 .price-table__cost {
@@ -82,6 +93,13 @@
   & p {
     transform: rotate(-45deg) translateX(-32px) translateY(15px);
     transform-origin: 0 0;
+    @media (min-width: @screen_tablet) {
+      font-size: 0.875rem;
+      transform: rotate(-45deg) translateX(-32px) translateY(8px);
+    }
+    @media (min-width: @screen_desktop) {
+      transform: rotate(-45deg) translateX(-32px) translateY(15px);
+    }
   }
 }
 
@@ -101,25 +119,32 @@
   background-color: @bg-white;
   border: 2px solid #e5e5e5;
   @media (min-width: @screen_tablet) {
-    padding-top: 11px;
-    padding-left: 15px;
-    padding-bottom: 11px;
+    text-align: left;
+    padding-top: 3px;
+    padding-left: 13px;
+    padding-bottom: 3px;
+    width: 150px;
   }
-  @media (min-width: @screen_tablet) {
-    padding-top: 15px;
-    padding-left: 19px;
-    padding-bottom: 15px;
+  @media (min-width: @screen_desktop) {
+    padding-top: 8px;
+    padding-left: 13px;
+    padding-bottom: 8px;
   }
 }
 
 .price-table__icon-yes {
   width: 26.752px;
   height: 26.752px;
-   float: right;
+  float: right;
   margin-right: 17px;
   @media (min-width: @screen_tablet) {
-    margin: 0 75px 0;
     float: none;
+    margin-top: 5px;
+    margin-left: 49px;
+    margin-right: 0;
+  }
+  @media (min-width: @screen_desktop) {
+    margin: 5px 89px 0;
   }
 }
 
@@ -129,8 +154,13 @@
   float: right;
   margin-right: 17px;
   @media (min-width: @screen_tablet) {
-    margin: 0 75px 0;
     float: none;
+    margin-top: 5px;
+    margin-left: 49px;
+    margin-right: 0;
+  }
+  @media (min-width: @screen_desktop) {
+    margin: 10px 87px 0;
   }
 }
 
@@ -153,7 +183,7 @@
     text-transform: none;
   }
   @media (min-width: @screen_desktop) {
-    font-size: @font-size-big;
+    font-size: @font-size-h2;
   }
 }
 

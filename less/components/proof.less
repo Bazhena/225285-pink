@@ -8,6 +8,7 @@
   text-align: left;
   @media (min-width: @screen_tablet) {
     display: block;
+    font-size: @font-size-h2;
   }
   @media (min-width: @screen_desktop) {
     font-size: @font-size-big;
@@ -22,6 +23,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 55px 0 20px;
+  @media (min-width: @screen_tablet) {
+    padding-bottom: 15px;
+  }
   @media (min-width: @screen_desktop) {
     padding: 30px 0 65px;
   }
@@ -30,30 +34,49 @@
 .proof__content {
   @media (min-width: @screen_desktop) {
     width: 600px;
-    padding-left: 40px;
+    padding-left: 47px;
+    margin-top: 0;
   }
 }
 
 .proof__title {
   width: 170px;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-bottom: 15px;
   font-size: (@font-size-h2 + 0.75);
   font-weight: (@font-weight-base + 300);
   line-height: 1.2;
+  @media (min-width: @screen_tablet) {
+    margin-bottom: 0;
+  }
   @media (min-width: @screen_desktop) {
     width: 100%;
     margin-top: 40px;
-    margin-bottom: 23px;
+    padding-bottom: 25px;
     font-size: 1.875rem;
   }
 }
 
 .proof__text {
   margin-bottom: 17px;
+  font-size: 0.875rem;
+  @media (min-width: @screen_tablet) {
+    margin-bottom: 10px;
+    width: 310px;
+  }
   @media (min-width: @screen_desktop) {
     margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: @font-size-h2;
     line-height: 1.7;
+    width: 530px;
+  }
+}
+.proof__base-link {
+  font-size: 0.875rem;
+  border-bottom: 1px solid @pink;
+  @media (min-width: @screen_desktop) {
+    font-size: @font-size-h2;
   }
 }
 
@@ -63,6 +86,10 @@
   height: 302px;
   margin-right: 47px;
   z-index: 20;
+  @media (min-width: @screen_tablet) {
+    margin-left: -10px;
+      margin-right: 67px;
+  }
   @media (min-width: @screen_desktop) {
     margin-right: 30px;
     width: 298.001px;
@@ -76,18 +103,25 @@
     width: 192px;
     height: 192px;
     font-family: @font-family-regular;
-    font-size: 104.6px;
+    font-size: 101.6px;
     font-weight: 700;
     line-height: 192px;
     text-align: center;
     color: @pink;
-    border: 11px solid @pink;
+    border: 10px solid @pink;
     border-radius: 50%;
     background-color: @bg-white;
     z-index: 100;
+    @media (min-width: @screen_tablet) {
+      top: 54px;
+    left: 14px;
+    height: 182px;
+      width: 182px;
+      line-height: 182px; 
+    }
     @media (min-width: @screen_desktop) {
       top: 72px;
-      left: 27px;
+      left: 35px;
       width: 221px;
       height: 221px;
       font-size: 120px;
@@ -99,8 +133,8 @@
 }
 
 .timer__image {
-  width: 262px;
-  height: 302px;
+  width: 232px;
+  height: 272px;
   @media (min-width: @screen_tablet) {
     fill: #eeeeee;
   }
@@ -108,5 +142,6 @@
     width: 298.001px;
     height: 345.097px;
     fill: #dedede;
+    margin-left: 10px;
   }
 }

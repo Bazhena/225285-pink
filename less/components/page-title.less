@@ -90,34 +90,39 @@
     font-weight: @font-weight-light;
     @media (min-width: @screen_tablet) {
       visibility: visible;
-      margin-top: 5px;
-      margin-left: 0;
+      margin-left: -20px;
+      margin-top: 0;
       font-size: 2.5rem;
     }
     @media (min-width: @screen_desktop) {
-      margin-top: 20px;
+      margin-top: 18px;
       font-size: 3.125rem;
+      margin-left: 0;
     }
   }
   &--form {
+    font-family: @font-family-light;
+    font-weight: @font-weight-light;
     @media (min-width: @screen_tablet) {
       max-width: 100%;
       margin: auto;
       font-size: 3.125rem;
-      font-family: @font-family-regular;
-      font-weight: @font-weight-light;
     }
   }
   &--photo {
+    font-weight: @font-weight-light;
+    font-family: @font-family-light;
     padding-bottom: 25px;
     @media (min-width: @screen_tablet) {
-      width: 50%;
+      max-width: 100%;
       margin: auto;
       font-size: 3.125rem;
-      padding-bottom: 60px;
+      padding-bottom: 57px;
+      text-align: center;
     }
     @media (min-width: @screen_desktop) {
       padding: 0;
+      width: 50%;
     }
   }
 }

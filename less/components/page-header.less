@@ -52,6 +52,7 @@
       height: 40.375px;
       @media all and (min-width: @screen_tablet) {
         display: inline;
+        margin-left: -20px;
       }
       @media all and (min-width: @screen_desktop) {
         display: none;
@@ -89,8 +90,8 @@
     cursor: pointer;
     margin-right: -3px;
     @media (min-width: @screen_tablet) {
-      margin-top: 16px;
-      margin-right: -6px;
+      margin-top: 20px;
+      margin-right: -16px;
     }
     @media (min-width: @screen_desktop) {
       display: none;
@@ -151,19 +152,41 @@
       position: static;
       display: block;
       padding-top: 5px;
-      margin-right: 10px;
+      margin-right: -5px;
       float: right;
-      width: 680px;
+      width: 710px;
       border-top: none;
       background: none;
+    }
+  }
+  
+  .main-nav__list {
+    @media (min-width: @screen_desktop) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: ;
     }
   }
   
   .main-nav__item {
     border-bottom: 1px solid #000000;
     @media (min-width: @screen_desktop) {
-      margin-left: 5px;
+      margin-right: 61px;
       border-bottom: none;
+    }
+  }
+  
+  .main-nav__item:first-child {
+    @media (min-width: @screen_desktop) {
+      margin-right: ;
+    }
+  }
+  
+  .main-nav__item:last-child {
+    @media (min-width: @screen_desktop) {
+      margin-right: 0;
     }
   }
   
@@ -183,22 +206,11 @@
     }
     @media (min-width: @screen_desktop) {
       padding: 10px 6px;
-      margin-left: 60px;
+      margin-left: 0px;
       font-size: @font-size-big;
-      ;
       font-weight: @font-weight-base;
       text-transform: none;
       border: none;
-    }
-  }
-  
-  .main-nav__list {
-    @media (min-width: @screen_desktop) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
     }
   }
   
@@ -206,7 +218,7 @@
     color: @pink;
     @media (min-width: @screen_desktop) {
       padding-bottom: 8px;
-      color: @text-white;
+      color: @pink;
       border-bottom: 2px solid @text-white;
     }
   }

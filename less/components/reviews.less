@@ -27,6 +27,7 @@
   padding-top: 28px;
   @media (min-width: @screen_tablet) {
     padding-top: 50px;
+    width: 640px;
   }
   @media (min-width: @screen_desktop) {
     width: 700px;
@@ -37,6 +38,9 @@
 
 .reviews-item {
   margin-bottom: 27px;
+  @media (min-width: @screen_desktop) {
+    margin-bottom: 45px;
+  }
 }
 
 .reviews-item--2,
@@ -46,8 +50,15 @@
 
 .reviews-item__text {
   line-height: 2.1;
+  font-size: @font-size-h2;
   @media (min-width: @screen_tablet) {
     line-height: @line-height-base;
+    margin-top: 13px;
+  }
+  @media (min-width: @screen_desktop) {
+    line-height: @line-height-base;
+    width: 700px;
+    margin-left: -5px;
   }
 }
 
@@ -82,7 +93,7 @@
     display: none;
     @media (min-width: @screen_tablet) {
       display: block;
-      margin-top: 30px;
+      margin-top: 32px;
       margin-bottom: 0;
     }
   }

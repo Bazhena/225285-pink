@@ -1,17 +1,25 @@
 @import 'variables';
 @import 'mixins';
-.features {}
-
 .features__container {
+  .container();
+  @media (min-width: @screen_tablet) {
+    width: 100%;
+  }
+}
+
+.features__containers {
   .container();
   padding-top: 52px;
   @media (min-width: @screen_tablet) {
-    width: 320px;
+    width: 300px;
+    height: 410px;
     margin-right: 4.8%;
-    padding-top: 58px;
+    padding-top: 78px;
   }
   @media (min-width: @screen_desktop) {
-    width: @width-container--desktop;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 125px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -39,6 +47,7 @@
     margin: 0 auto;
     padding: 0;
     line-height: 1.2;
+    font-weight: 200;
   }
   @media (min-width: @screen_desktop) {
     font-size: 3.125rem;
@@ -53,13 +62,13 @@
 .features__items {
   padding-top: 0;
   margin: 0 0 0;
-  background: @bg-grey url(../img/bg-triangle-white.svg) center top no-repeat;
-  background-size: ;
+  background: @bg-grey url(../img/bg-triangle-white.svg) 0 -10% no-repeat;
   @media (min-width: @screen_tablet) {
     text-align: left;
   }
   @media (min-width: @screen_desktop) {
     background-size: 100% auto;
+    background-position: center top;
   }
 }
 
@@ -70,13 +79,16 @@
   margin-right: auto;
   margin-bottom: 5px;
   @media (min-width: @screen_tablet) {
-    margin-bottom: 15px;
+    margin-bottom: 36px;
+    padding-bottom: 0px;
     padding-top: 0;
   }
   @media (min-width: @screen_desktop) {
     width: 300px;
     padding-top: 293px;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
   .features-item:last-child {
     padding-bottom: 0;
@@ -94,14 +106,16 @@
 .features-item__title {
   margin-top: 15px;
   margin-bottom: 0;
+  font-family: @font-family-bold;
+  font-weight: @font-weight-bold;
   @media (min-width: @screen_tablet) {
-    margin-top: 0;
+    margin-top: 0px;
   }
   @media (min-width: @screen_desktop) {
     width: 230px;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     font-size: 1.875rem;
-    line-height: 1.1;
+    line-height: 1.0;
   }
 }
 
@@ -109,15 +123,19 @@
   margin-top: 10px;
   margin-bottom: 0;
   @media (min-width: @screen_tablet) {
-    margin-top: 10px;
+    width: 315px;
+    text-align: left;
+    margin-top: 8px;
     margin-bottom: 15px;
-    font-size: @font-size;
+    font-size: 0.875rem;
     line-height: 1.7;
   }
   @media (min-width: @screen_desktop) {
-    width: 245px;
+    width: 250px;
     margin: 10px auto 15px;
     font-size: @font-size-big;
+    line-height: 1.6;
+    text-align: center;
   }
 }
 
@@ -134,12 +152,12 @@
   }
   @media (min-width: @screen_tablet) {
     position: absolute;
-    bottom: 0;
-    left: -307px;
-    width: 268px;
+    top: -402px;
+    left: -312px;
+    width: 269px;
     height: 481px;
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
-    background-size: 268px auto;
+    background-size: 269px 481px;
   }
   @media (min-width: @screen_tablet) and (min-resolution: 144dpi),
   (min-width: @screen_tablet) and (min-resolution: 1.5dppx) {
@@ -147,8 +165,8 @@
   }
   @media (min-width: @screen_desktop) {
     position: absolute;
-    top: -108px;
-    left: 8px;
+    top: -107px;
+    left: 6px;
     width: 292px;
     height: 302px;
     background-size: 292px auto;

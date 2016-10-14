@@ -9,6 +9,10 @@
     @media (min-width: @screen_tablet) {
       font-size: @font-size-big;
       background: none;
+      @media (min-width: @screen_desktop) {
+        margin-left: 15px;
+        font-size: @font-size-h2;
+      }
     }
   }
   
@@ -28,8 +32,11 @@
   
   .download-app__description {
     @media (min-width: @screen_tablet) {
-      width: 300px;
-      line-height: (@line-height-base - 0.2);
+      width: 350px;
+      margin-left: -40px;
+      font-family: @font-family-light;
+      font-weight: @font-weight-light;
+      line-height: (@line-height-base - 0.3);
     }
   }
   
@@ -42,8 +49,8 @@
       margin-bottom: 34px;
     }
     @media (min-width: @screen_desktop) {
-      margin-top: 65px;
-      margin-bottom: 56px;
+      margin-top: 68px;
+      margin-bottom: 53px;
     }
   }
   
