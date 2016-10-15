@@ -31,19 +31,11 @@ module.exports = function (grunt) {
       }
     },
 
-    svgstore: {
-      symbols: {
-        files: {
-          "build/img/symbols.svg": ["img/icons/*.svg "]
-        }
-      }
-    },
-
     svgmin: {
       symbols: {
         files: [{
           expand: true,
-          src: ["build/img/icons/*.svg"]
+          src: ["build/img/*.svg"]
           }]
       }
     },
@@ -132,15 +124,13 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("build", [
     "clean",
     "copy",
     "less",
     "postcss",
     "cssmin",
-    "cssmin",
-    "symbols",
+    "svgmin",
     "imagemin"
   ]);
 };

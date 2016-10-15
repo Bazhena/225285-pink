@@ -31,22 +31,26 @@
   }
   
   .download-app__description {
+    margin-top: 5px;
+    font-size: 0.875rem;
     @media (min-width: @screen_tablet) {
       width: 350px;
-      margin-left: -40px;
+      margin-left: -45px;
       font-family: @font-family-light;
       font-weight: @font-weight-light;
       line-height: (@line-height-base - 0.3);
+      font-size: @font-size-h2;
     }
   }
   
   .download-app__platforms {
     height: 56.753px;
-    margin: 31px auto 24px;
+    margin: 30px auto 22px 4px;
     padding: auto;
     @media (min-width: @screen_tablet) {
       margin-top: 45px;
       margin-bottom: 34px;
+      margin-left: -35px;
     }
     @media (min-width: @screen_desktop) {
       margin-top: 68px;
@@ -60,4 +64,18 @@
     width: 46.21px;
     height: 56.753px;
     margin-right: 30px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--Apple {
+      background-image: url(../img/logo-apple.svg);
+    }
+    &--Android {
+      background-image: url(../img/logo-android.svg);
+    }
+    &--Windows {
+      background-image: url(../img/logo-microsoft.svg);
+    }
   }

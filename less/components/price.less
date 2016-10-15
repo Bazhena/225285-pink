@@ -4,6 +4,7 @@
 .price {
   padding-top: 68px;
   padding-bottom: 43px;
+  margin-top: 6px;
   text-transform: uppercase;
   overflow: hidden;
   background: @bg-grey url(../img/bg-triangle-white.svg) center top no-repeat;
@@ -111,56 +112,33 @@
 }
 
 .price-table__service {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
   font-size: @font-size;
   text-align: left;
   background-color: @bg-white;
+  background-repeat: no-repeat;
+  background-position: 92.7% 50%;
   border: 2px solid #e5e5e5;
   @media (min-width: @screen_tablet) {
     text-align: left;
-    padding-top: 3px;
+    padding-top: 9px;
     padding-left: 13px;
-    padding-bottom: 3px;
+    padding-bottom: 11px;
     width: 150px;
+    background-position: 50% 50%;
   }
   @media (min-width: @screen_desktop) {
     padding-top: 8px;
     padding-left: 13px;
     padding-bottom: 8px;
   }
-}
-
-.price-table__icon-yes {
-  width: 26.752px;
-  height: 26.752px;
-  float: right;
-  margin-right: 17px;
-  @media (min-width: @screen_tablet) {
-    float: none;
-    margin-top: 5px;
-    margin-left: 49px;
-    margin-right: 0;
+  &--yes {
+    background-image: url(../img/icon-yes.svg);
   }
-  @media (min-width: @screen_desktop) {
-    margin: 5px 89px 0;
-  }
-}
-
-.price-table__icon-no {
-  width: 26.752px;
-  height: 26.752px;
-  float: right;
-  margin-right: 17px;
-  @media (min-width: @screen_tablet) {
-    float: none;
-    margin-top: 5px;
-    margin-left: 49px;
-    margin-right: 0;
-  }
-  @media (min-width: @screen_desktop) {
-    margin: 10px 87px 0;
+  &--no {
+    background-image: url(../img/icon-no.svg);
   }
 }
 

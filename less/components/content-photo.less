@@ -4,7 +4,13 @@
      flex-wrap: wrap;
      font-size: @font-size;
      line-height: 2.1em;
+     max-width: 320px;
+     margin: 0 auto;
      color: @grey-dark;
+     @media (min-width: @screen_tablet) {
+       max-width: 660px;
+       margin: 0 auto;
+     }
      @media (min-width: @screen_desktop) {
        justify-content: center;
        max-width: 960px;
@@ -225,7 +231,7 @@
    }
    
    .content-photo__main-text {
-     width: 240px;
+     width: 252px;
      margin-top: -4px;
      margin-left: 16px;
      order: 5;

@@ -5,11 +5,14 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  max-width: 320px;
+  margin: 0 auto;
   font-size: @font-size;
   line-height: 2.142857143;
   color: @grey-dark;
   @media (min-width: @screen_tablet) {
-    margin-bottom: 35px;
+    max-width: 660px;
+    margin: 0 auto 35px;
   }
   @media (min-width: @screen_desktop) {
     max-width: 960px;
@@ -104,7 +107,7 @@
 
 .form__description {
   margin-top: 45px;
-  width: 280px;
+  width: 290px;
   @media (min-width: @screen_tablet) {
     width: 515px;
     margin-top: 92px;

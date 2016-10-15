@@ -4,9 +4,11 @@
   flex-wrap: wrap;
   justify-content: center;
   line-height: 1.7em;
-  margin-bottom: 41px;
+  max-width: 320px;
+  margin: 0 auto 41px;
   @media (min-width: @screen_tablet) {
-    margin-bottom: -10px;
+    max-width: 660px;
+    margin: 0 auto -10px;
   }
   @media (min-width: @screen_desktop) {
     max-width: 960px;
@@ -22,8 +24,8 @@
   font-size: @font-size;
   @media (min-width: @screen_tablet) {
     line-height: @line-height-base;
-    margin: 29px 0 53px;
-    font-size: @font-size-big;
+    margin: 31px 0 53px;
+    font-size: @font-size-h2;
   }
   @media (min-width: @screen_desktop) {
     margin: -10px 0 49px;
@@ -38,7 +40,7 @@
     order: 1;
     width: 300px;
     height: 400px;
-    margin-left: 38px;
+    margin-left: 18px;
     margin-top: 57px;
   }
   @media (min-width: @screen_desktop) {
@@ -84,7 +86,6 @@
   @media (min-width: @screen_tablet) {
     display: flex;
     flex-direction: row;
-    width: 39%;
     margin-left: 388px;
   }
   @media (min-width: @screen_desktop) {
